@@ -2,7 +2,7 @@
 layout: default
 id: dbr_overview
 sourceCodeUrl: /introduction/overview.md
-sidebarListFile: sidebarList/introduction
+sidebarListFile: introduction
 needCollapsedSideBar: false
 needAutoGenerateSidebar: false
 ---
