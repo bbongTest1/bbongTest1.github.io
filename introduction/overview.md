@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default_withSideBar
 id: dbr_overview
 sourceCodeUrl: /introduction/overview.md
 sidebarListFile: introductionList
