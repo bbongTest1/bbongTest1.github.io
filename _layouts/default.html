@@ -7,21 +7,21 @@
     <div class="wrapper">
         <div class="sideBar">
             <div class="sideBarProductPage">
-                <p align="left"><img src="{{- site.dbr_logo -}}" class="sideDBRLogo" alt="DBR Logo" />&nbsp;&nbsp;<a
+                <p align="left"><img src="{{ site.dbr_logo }}" class="sideDBRLogo" alt="DBR Logo" />&nbsp;&nbsp;<a
                         href="https://www.dynamsoft.com/Products/Dynamic-Barcode-Reader.aspx"
                         class="sideProductPage">Dynamsoft Barcode Reader</a></p>
             </div>
-            {%- include {{- page.sidebarListFile -}}.html -%}
+            {%- include {{ page.sidebarListFile }}.html -%}
         </div>
         <div class="container">
             <div class="main">
                 <div class="content markdown-body headCounter">
                     <p align="left"><a href="https://www.dynamsoft.com/"><img src="{{- site.dynamsoft_logo -}}"
                                 alt="Dynamsoft Logo" /></a></p>
-                    <p align="right"><a href="{{- site.repositoryUrl -}}{{- page.sourceCodeUrl -}}"
-                            class="otherLinkColour">Edit<img src="{{- site.edit_icon -}}" width="20px" height="15px" /></a>
+                    <p align="right"><a href="{{ site.repositoryUrl }}{{ page.sourceCodeUrl }}"
+                            class="otherLinkColour">Edit<img src="{{ site.edit_icon }}" width="20px" height="15px" /></a>
                     </p>
-                    {{- content -}}
+                    {{ content }}
                 </div>
             </div>
         </div>
