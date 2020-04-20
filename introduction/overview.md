@@ -1,8 +1,8 @@
 ---
-layout: default_withSideBar
+layout: default_layout
 id: dbr_overview
 sourceCodeUrl: /introduction/overview.md
-sidebarListFile: introductionList
+sidebarListFile: sidelist_introduction
 needCollapsedSideBar: false
 needAutoGenerateSidebar: false
 ---
