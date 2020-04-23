@@ -22,6 +22,7 @@
                             class="otherLinkColour">Edit<img src="{{ site.edit_icon }}" width="20px" height="15px" /></a>
                     </p>
                     <p>
+                        {{ page.url }}
                         {% assign filename = {{ page.url }} | split: '/' | last | replace: '.html', '' %}
                         {{ filename }}
                     </p>
