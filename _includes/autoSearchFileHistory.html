@@ -12,12 +12,14 @@
 {% for my_page in site.pages %} 
 	{% assign tmpPageFileName = my_page.url | split: '/' | last | replace: '.html', '' %}
 	{% assign tmpPathName = my_page.url | split: tmpPageFileName | first %}
-	{% if curPathName == tmpPathName and tmpPageFileName contains curPageFileNameWithoutVer %}
-		{% if tmpPageFileName contains '_v' %}
-			{% capture liName %} version {{ tmpPageFileName |  split: '_v' | last }} {% endcapture %}
-			<li><a href = "{{ my_page.url }}">{{ liName }}</a></li>
-		{% else %}
-			<li><a href = "{{ my_page.url }}">latest version</a></li>
+	{% if curPathName == tmpPathName  and tmpPageFileName != curPageFileName %}
+		{% if tmpPageFileName contains curPageFileNameWithoutVer %}
+			{% if tmpPageFileName contains '_v' %}
+				{% capture liName %} version {{ tmpPageFileName |  split: '_v' | last }} {% endcapture %}
+				<li><a href = "{{ my_page.url }}">{{ liName }}</a></li>
+			{% else %}
+				<li><a href = "{{ my_page.url }}">latest version</a></li>
+			{% endif %}
 		{% endif %}
 	{% endif %}
 {% endfor %}
