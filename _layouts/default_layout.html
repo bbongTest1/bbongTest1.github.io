@@ -23,7 +23,7 @@
                     </p>
                     <p>
                         {{ page.url }}
-                        {% assign filename = page.url  | split: '/' | last %}
+                        {% assign filename = page.url  | split: '/' | last | replace: '.html', '' %}
                         {{ filename }}
                     </p>
                     {{ content }}
