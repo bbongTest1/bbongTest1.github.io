@@ -18,9 +18,9 @@
 	{% if curPathName == tmpPathName and tmpPageFileName != curPageFileName and tmpPageFileName contains curPageFileNameWithoutVer %}
 		{% if tmpPageFileName contains '_v' %}
 			{% capture liName %} version {{ tmpPageFileName |  split: '/' | last }} {% endcapture %}
-			<li><a href = "{{ my_page.url }}">{{ liName }}</li>
+			<li><a href = "{{ my_page.url }}">{{ liName }}</a></li>
 		{% else %}
-			<li><a href = "{{ my_page.url }}">latest version</li>
+			<li><a href = "{{ my_page.url }}">latest version</a></li>
 		{% endif %}
 	{% endif %}
 {% endfor %}
