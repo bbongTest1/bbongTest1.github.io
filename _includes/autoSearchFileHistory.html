@@ -1,8 +1,8 @@
 {% assign curPageFileName = page.url | split: '/' | last | replace: '.html', '' %}
 {% assign curPathName = page.url | split: curPageFileName | first %}
 
-{% capture curPageFileNameWithoutVer %}	{% capture curPageFileNameWithoutVer %}
-{% if curPageFileName contains '_v' %}	{% if curPageFileName contains '_v' %}
+{% capture curPageFileNameWithoutVer %}	
+{% if curPageFileName contains '_v' %}	
 {{ curPageFileName | split: '_v' | first }}
 {% else %}
 {{ curPageFileName }}
