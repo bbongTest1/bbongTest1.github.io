@@ -20,8 +20,10 @@
 		{{ tmpPageFileName }}
 		{% endif %}
 		{% endcapture %}
-
-		{% if tmpPageFileNameWithoutVer | strip  == curPageFileNameWithoutVer | strip %}
+		
+		{% assign tmpPageFileNameWithoutVer = tmpPageFileNameWithoutVer | strip %}
+		{% assign curPageFileNameWithoutVer = curPageFileNameWithoutVer | strip %}
+		{% if tmpPageFileNameWithoutVer  == curPageFileNameWithoutVer %}
 			{% if tmpPageFileName contains '_v' %}
 				{% capture liName %} version {{ tmpPageFileName |  split: '_v' | last }} {% endcapture %}
 				<li><a href = "{{ my_page.url }}">{{ liName }}</a></li>
