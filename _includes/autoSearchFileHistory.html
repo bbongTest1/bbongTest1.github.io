@@ -1,6 +1,7 @@
 {% assign curPageFileName = page.url | split: '/' | last | replace: '.html', '' %}
 {% assign curPathName = page.url | split: currentPageFileName | first %}
 {% assign curPageFileNameWithoutVer = curPageFileName | split: '_v' | first %}
+{{ curPageFileNameWithoutVer }}
 
 {% for my_page in site.pages %} 
 	{% assign tmpPageFileName = my_page.url | split: '/' | last | replace: '.html', '' %}
