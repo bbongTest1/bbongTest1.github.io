@@ -3,9 +3,9 @@
 
 {% capture curPageFileNameWithoutVer %}
 {% if curPageFileName contains '_v' %}
-{{ curPageFileName | split: '_v' | first | escape }}
+{{ curPageFileName | split: '_v' | first }}
 {% else %}
-{{ curPageFileName | escape }}
+{{ curPageFileName }}
 {% endif %}
 {% endcapture %}
 {{ curPageFileNameWithoutVer }}{{curPageFileNameWithoutVer.size}}
@@ -15,11 +15,12 @@
 	{% if curPathName == tmpPathName and tmpPageFileName != curPageFileName %}
 		{% capture tmpPageFileNameWithoutVer %}
 		{% if tmpPageFileName contains '_v' %}
-		{{ tmpPageFileName | split: '_v' | first | escape }}
+		{{ tmpPageFileName | split: '_v' | first }}
 		{% else %}
 		{{ tmpPageFileName | escape }}
 		{% endif %}
 		{% endcapture %}
+		{{ tmpPageFileName }} {{tmpPageFileName.size}}
 		{{ tmpPageFileNameWithoutVer }}{{tmpPageFileNameWithoutVer.size}}
 		{% if tmpPageFileNameWithoutVer == curPageFileNameWithoutVer %}
 			{% if tmpPageFileName contains '_v' %}
