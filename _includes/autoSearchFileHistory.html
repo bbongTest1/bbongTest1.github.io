@@ -3,9 +3,9 @@
 
 {% capture curPageFileNameWithoutVer %}	
 {% if curPageFileName contains '_v' %}	
-{{ curPageFileName | split: '_v' | first }}
+{{ curPageFileName | split: '_v' | first | escape | strip }}
 {% else %}
-{{ curPageFileName }}
+{{ curPageFileName | escape | strip }}
 {% endif %}
 {% endcapture %}
 
@@ -16,14 +16,13 @@
 	{% if curPathName == tmpPathName and tmpPageFileName != curPageFileName %}		
 		{% capture tmpPageFileNameWithoutVer %}		
 		{% if tmpPageFileName contains '_v' %}		
-		{{ tmpPageFileName | split: '_v' | first }}			
+		{{ tmpPageFileName | split: '_v' | first | escape | strip }}			
 		{% else %}		
-		{{ tmpPageFileName }}			
+		{{ tmpPageFileName | escape | strip}}			
 		{% endif %}
 		{% endcapture %}
-		{% assign a1 = tmpPageFileNameWithoutVer | strip %}	
-		{% assign a2 = curPageFileNameWithoutVer | strip %}
-		{% if a1 == a2 %}	
+
+		{% if tmpPageFileNameWithoutVer == curPageFileNameWithoutVer %}	
 			{% if tmpPageFileName contains '_v' %}			
 				{% capture liName %} version {{ tmpPageFileName |  split: '_v' | last }} {% endcapture %}			
 				<li><a href = "{{ my_page.url }}">{{ liName }}</a></li>				
