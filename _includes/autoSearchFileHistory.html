@@ -1,5 +1,5 @@
-{% assign curPageFileName = page.url | split: '/' | last | replace: '.html', '' | strip % }
-{% assign curPathName = page.url | split: curPageFileName | first | strip %}
+{% assign curPageFileName = page.url | split: '/' | last | replace: '.html', '' % }
+{% assign curPathName = page.url | split: curPageFileName | first %}
 
 {% capture curPageFileNameWithoutVer %}
 {% if curPageFileName contains '_v' %}
@@ -10,8 +10,8 @@
 {% endcapture %}
 
 {% for my_page in site.pages %} 
-	{% assign tmpPageFileName = my_page.url | split: '/' | last | replace: '.html', '' | strip %}
-	{% assign tmpPathName = my_page.url | split: tmpPageFileName | first | strip %}
+	{% assign tmpPageFileName = my_page.url | split: '/' | last | replace: '.html', '' %}
+	{% assign tmpPathName = my_page.url | split: tmpPageFileName | first %}
 	{% if curPathName == tmpPathName and tmpPageFileName != curPageFileName %}
 		{% capture tmpPageFileNameWithoutVer %}
 		{% if tmpPageFileName contains '_v' %}
