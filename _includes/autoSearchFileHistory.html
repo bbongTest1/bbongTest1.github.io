@@ -21,7 +21,7 @@
 		{{ tmpPageFileName | escape | strip}}			
 		{% endif %}
 		{% endcapture %}
-
+		{{tmpPageFileNameWithoutVer}}{{tmpPageFileNameWithoutVer.size}}{{curPageFileNameWithoutVer}}{{curPageFileNameWithoutVer.size}}
 		{% if tmpPageFileNameWithoutVer == curPageFileNameWithoutVer %}	
 			{% if tmpPageFileName contains '_v' %}			
 				{% capture liName %} version {{ tmpPageFileName |  split: '_v' | last }} {% endcapture %}			
