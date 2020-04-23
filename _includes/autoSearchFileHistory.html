@@ -1,8 +1,16 @@
-{% assign currentPageFileName = page.url | split: '/' | last %}
-{% assign currentPathName = page.ulr | split: currentPageFileName | fisrt %}
+{% assign curPageFileName = page.url | split: '/' | last | replace: '.html', '' %}
+{% assign curPathName = page.url | split: currentPageFileName | first %}
+{% assign curPageFileNameWithoutVer = curPageFileName | split: '_v' | first %}
 
 {% for my_page in site.pages %} 
-
-
-
+	{% assign tmpPageFileName = my_page.url | split: '/' | last | replace: '.html', '' %}
+	{% assign tmpPathName = my_page.url | split: tmpPageFileName | first %}
+	{% if curPathName == tmpPathName and tmpPageFileName != curPageFileName and tmpPageFileName contains curPageFileNameWithoutVer}
+		{% if tmpPageFileName contains '_v'}
+			{% capture liName %} version {{ tmpPageFileName |  split: '/' | last }} {% endcapture %}
+			<li><a href = "{{ my_page.url }}">{{ liName }}</li>
+		{% else %}
+			<li><a href = "{{ my_page.url }}">latest version</li>
+		{% endif %}
+	{% endif %}
 {%endfor%}
