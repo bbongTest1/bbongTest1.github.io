@@ -21,9 +21,9 @@
 		{% endif %}
 		{% endcapture %}
 		
-		{% assign tmpPageFileNameWithoutVer = tmpPageFileNameWithoutVer | strip %}
-		{% assign curPageFileNameWithoutVer = curPageFileNameWithoutVer | strip %}
-		{% if tmpPageFileNameWithoutVer  == curPageFileNameWithoutVer %}
+		{% assign a1 = tmpPageFileNameWithoutVer | strip %}
+		{% assign a2 = curPageFileNameWithoutVer | strip %}
+		{% if a1  == a2 %}
 			{% if tmpPageFileName contains '_v' %}
 				{% capture liName %} version {{ tmpPageFileName |  split: '_v' | last }} {% endcapture %}
 				<li><a href = "{{ my_page.url }}">{{ liName }}</a></li>
