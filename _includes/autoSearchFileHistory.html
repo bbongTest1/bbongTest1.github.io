@@ -1,3 +1,6 @@
+{% assign currentPageFileName = page.url | split: '/' | last %}
+{% assign currentPathName = page.ulr | split: currentPageFileName | fisrt %}
+
 {% for my_page in site.pages %} 
 
 
