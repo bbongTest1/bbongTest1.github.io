@@ -2,7 +2,7 @@
 {% assign curPathName = page.url | split: currentPageFileName | first %}
 
 {% capture curPageFileNameWithoutVer %}
-{% if curPageFileName contains '_v'}
+{% if curPageFileName contains '_v' %}
 {{ curPageFileName | split: '_v' | first }}
 {% else %}
 {{ curPageFileName }}
