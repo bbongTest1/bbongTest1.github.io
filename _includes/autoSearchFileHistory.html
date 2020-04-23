@@ -9,8 +9,8 @@
 {% endif %}
 {% endcapture %}
 
-{{curPageFileName }}
-{{ curPageFileNameWithoutVer}}
+{{ curPageFileName }}
+{{ curPageFileNameWithoutVer }}
 
 {% for my_page in site.pages %} 
 	{% assign tmpPageFileName = my_page.url | split: '/' | last | replace: '.html', '' %}
