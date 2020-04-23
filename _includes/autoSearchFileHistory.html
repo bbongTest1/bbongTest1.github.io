@@ -20,8 +20,8 @@
 		{{ tmpPageFileName | escape }}
 		{% endif %}
 		{% endcapture %}
-		{% assign a1 = tmpPageFileNameWithoutVer %}
-		{% assign a2 = curPageFileNameWithoutVer %}
+		{% assign a1 = tmpPageFileNameWithoutVer | strip %}
+		{% assign a2 = curPageFileNameWithoutVer | strip %}
 		{{a1}}{{a1.size}}{{a2}}{{a2.size}}
 		{% if a1 == a2 %}
 			{% if tmpPageFileName contains '_v' %}
