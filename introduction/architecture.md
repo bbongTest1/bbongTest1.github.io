@@ -1,5 +1,5 @@
 ---
-layout: general_layout
+layout: default_layout
 id: dbr_architecture
 sideHeader: Architecture
 sourceCodeUrl: /introduction/architecture.md
