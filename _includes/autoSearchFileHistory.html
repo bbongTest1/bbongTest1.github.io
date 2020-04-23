@@ -21,7 +21,7 @@
 		{% endif %}
 		{% endcapture %}
 		{{ tmpPageFileNameWithoutVer | escape  }}{{tmpPageFileNameWithoutVer.size}}
-		{% if tmpPageFileNameWithoutVer == curPageFileNameWithoutVer %}
+		{% if {{ tmpPageFileNameWithoutVer | escape }} == {{ curPageFileNameWithoutVer | escape }} %}
 			{% if tmpPageFileName contains '_v' %}
 				{% capture liName %} version {{ tmpPageFileName |  split: '_v' | last }} {% endcapture %}
 				<li><a href = "{{ my_page.url }}">{{ liName }}</a></li>
