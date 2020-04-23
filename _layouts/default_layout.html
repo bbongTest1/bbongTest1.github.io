@@ -23,7 +23,7 @@
                     </p>
                     <p>
                         {% assign currentPageFileName = page.url | split: '/' | last %}
-                        {% assign currentPathName = page.ulr | split: currentPageFileName | fisrt %}
+                        {% assign currentPathName = page.url | split: currentPageFileName | fisrt %}
                         {{ currentPageFileName }}
                         {{ currentPathName }}
                     </p>
