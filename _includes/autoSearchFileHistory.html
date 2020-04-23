@@ -9,6 +9,7 @@
 {% endif %}
 {% endcapture %}
 
+{{ curPageFileNameWithoutVer }}
 {% for my_page in site.pages %} 
 	{% assign tmpPageFileName = my_page.url | split: '/' | last | replace: '.html', '' %}
 	{% assign tmpPathName = my_page.url | split: tmpPageFileName | first %}
@@ -20,6 +21,7 @@
 		{{ tmpPageFileName }}
 		{% endif %}
 		{% endcapture %}
+		{{ tmpPageFileNameWithoutVer }} ////
 		{% if tmpPageFileNameWithoutVer == curPageFileNameWithoutVer %}
 			{% if tmpPageFileName contains '_v' %}
 				{% capture liName %} version {{ tmpPageFileName |  split: '_v' | last }} {% endcapture %}
