@@ -16,6 +16,7 @@
 	{% assign tmpPageFileName = my_page.url | split: '/' | last | replace: '.html', '' %}
 	{% assign tmpPathName = my_page.url | split: tmpPageFileName | first %}
 	{% if curPathName == tmpPathName and tmpPageFileName != curPageFileName and tmpPageFileName contains curPageFileNameWithoutVer %}
+		{{ my_page.url }}
 		{% if tmpPageFileName contains '_v' %}
 			{% capture liName %} version {{ tmpPageFileName |  split: '/' | last }} {% endcapture %}
 			<li><a href = "{{ my_page.url }}">{{ liName }}</a></li>
