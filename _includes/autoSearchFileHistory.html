@@ -23,6 +23,7 @@
 		{% endcapture %}
 		{% assign a1 = tmpPageFileNameWithoutVer | strip %}	
 		{% assign a2 = curPageFileNameWithoutVer | strip %}
+		{{a1}}{{a1.size}}{{a2}}{{a2.size}}
 		{% if a1 == a2 %}	
 			{% if tmpPageFileName contains '_v' %}			
 				{% capture liName %} version {{ tmpPageFileName |  split: '_v' | last }} {% endcapture %}			
