@@ -3,25 +3,25 @@
 
 {% capture curPageFileNameWithoutVer %}
 {% if curPageFileName contains '_v' %}
-{{ curPageFileName | split: '_v' | first }}
+{{ curPageFileName | split: '_v' | first | escape }}
 {% else %}
-{{ curPageFileName }}
+{{ curPageFileName | escape }}
 {% endif %}
 {% endcapture %}
-{{ curPageFileNameWithoutVer | escape }}{{curPageFileNameWithoutVer.size}}
+{{ curPageFileNameWithoutVer }}{{curPageFileNameWithoutVer.size}}
 {% for my_page in site.pages %} 
 	{% assign tmpPageFileName = my_page.url | split: '/' | last | replace: '.html', '' %}
 	{% assign tmpPathName = my_page.url | split: tmpPageFileName | first %}
 	{% if curPathName == tmpPathName and tmpPageFileName != curPageFileName %}
 		{% capture tmpPageFileNameWithoutVer %}
 		{% if tmpPageFileName contains '_v' %}
-		{{ tmpPageFileName | split: '_v' | first }}
+		{{ tmpPageFileName | split: '_v' | first | escape }}
 		{% else %}
-		{{ tmpPageFileName }}
+		{{ tmpPageFileName | escape }}
 		{% endif %}
 		{% endcapture %}
-		{{ tmpPageFileNameWithoutVer | escape  }}{{tmpPageFileNameWithoutVer.size}}
-		{% if {{ tmpPageFileNameWithoutVer | escape }} == {{ curPageFileNameWithoutVer | escape }} %}
+		{{ tmpPageFileNameWithoutVer }}{{tmpPageFileNameWithoutVer.size}}
+		{% if tmpPageFileNameWithoutVer == curPageFileNameWithoutVer %}
 			{% if tmpPageFileName contains '_v' %}
 				{% capture liName %} version {{ tmpPageFileName |  split: '_v' | last }} {% endcapture %}
 				<li><a href = "{{ my_page.url }}">{{ liName }}</a></li>
