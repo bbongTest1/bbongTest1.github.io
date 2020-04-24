@@ -2,7 +2,7 @@
 layout: default-layout
 sideHeader: Architecture
 sourceCodeUrl: /introduction/architecture.md
-sidebarListFile: sidelist_autoGenerate
+sidebarListFile: sidelist-auto-generate
 needCollapsedSideBar: false
 needAutoGenerateSidebar: true
 ---
