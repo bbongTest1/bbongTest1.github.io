@@ -2,8 +2,8 @@
 {% assign curPathName = page.url | split: curPageFileName | first %}
 
 {% capture curPageFileNameWithoutVer %}	
-{% if curPageFileName contains '_v' %}	
-{{ curPageFileName | split: '_v' | first }}
+{% if curPageFileName contains '-v' %}	
+{{ curPageFileName | split: '-v' | first }}
 {% else %}
 {{ curPageFileName }}
 {% endif %}
@@ -14,8 +14,8 @@
 	{% assign tmpPathName = my_page.url | split: tmpPageFileName | first %}		
 	{% if curPathName == tmpPathName and tmpPageFileName != curPageFileName %}		
 		{% capture tmpPageFileNameWithoutVer %}		
-		{% if tmpPageFileName contains '_v' %}		
-		{{ tmpPageFileName | split: '_v' | first }}			
+		{% if tmpPageFileName contains '-v' %}		
+		{{ tmpPageFileName | split: '-v' | first }}			
 		{% else %}		
 		{{ tmpPageFileName }}			
 		{% endif %}
@@ -25,8 +25,8 @@
 		{% assign a2 = curPageFileNameWithoutVer | strip %}
 
 		{% if a1 == a2 %}	
-			{% if tmpPageFileName contains '_v' %}			
-				{% capture liName %} version {{ tmpPageFileName |  split: '_v' | last }} {% endcapture %}			
+			{% if tmpPageFileName contains '-v' %}			
+				{% capture liName %} version {{ tmpPageFileName |  split: '-v' | last }} {% endcapture %}			
 				<li><a href = "{{ my_page.url }}">{{ liName }}</a></li>				
 			{% else %}
 				<li><a href = "{{ my_page.url }}">latest version</a></li>	
