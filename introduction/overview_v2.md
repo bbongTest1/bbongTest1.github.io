@@ -1,5 +1,5 @@
 ---
-layout: default_layout
+layout: default-layout
 id: dbr_overview_v2
 sourceCodeUrl: /introduction/overview_v2.md
 sidebarListFile: sidelist-introduction
