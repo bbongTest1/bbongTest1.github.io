@@ -1,6 +1,5 @@
 ---
-layout: default_layout
-id: dbr_architecture
+layout: default-layout
 sideHeader: Architecture
 sourceCodeUrl: /introduction/architecture.md
 sidebarListFile: sidelist_autoGenerate
