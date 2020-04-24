@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 sourceCodeUrl: /introduction/overview.md
-sidebarListFile: sidelist_introduction
+sidebarListFile: sidelist-introduction
 needCollapsedSideBar: false
 needAutoGenerateSidebar: false
 ---
