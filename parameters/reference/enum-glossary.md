@@ -3,7 +3,7 @@ layout: default-layout
 sideHeader: Enumerations
 sourceCodeUrl: parameters/reference/enum-glossary.md
 sidebarListFile: sidelist-enums
-needCollapsedSideBar: false
+needCollapsedSideBar: true
 needAutoGenerateSidebar: false
 ---
 
