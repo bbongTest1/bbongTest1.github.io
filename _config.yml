@@ -3,6 +3,8 @@ repositoryUrl: https://github.com/bbongTest1/bbongTest1.github.io/blob/master
 docHomePage: /
 
 introduction: /introduction/
+parameters_reference: /parameters/reference/
+enumerations: /parameters/reference/enums/
 
 dynamsoft_logo: /assets/img-icon/dynamsoft-logo.png
 dbr_logo: /assets/img-icon/dbr-logo.png
