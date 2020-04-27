@@ -1,7 +1,10 @@
 ---
-layout: manual-interface-struct
-id: interface_struct_QRCodeDetails
-sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/struct/QRCodeDetails.md
+layout: default-layout
+sideHeader: C and C++ Struct
+sourceCodeUrl: programming/c-cplusplus/api-reference/struct/QRCodeDetails.md
+sidebarListFile: sidelist-c-cpp-structs
+needCollapsedSideBar: false
+needAutoGenerateSidebar: false
 ---
 
 

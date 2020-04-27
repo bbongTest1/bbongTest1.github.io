@@ -1,7 +1,10 @@
 ---
-layout: manual-interface-cpp
-id: interface_cpp_license_methods
-sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/cpp/CBarcodeReader/methods/license.md
+layout: default-layout
+sideHeader: C++ Methods
+sourceCodeUrl: /programming/c-cplusplus/api-reference/cpp-method/license.md
+sidebarListFile: sidelist-cpp-methods
+needCollapsedSideBar: true
+needAutoGenerateSidebar: false
 ---
 
 

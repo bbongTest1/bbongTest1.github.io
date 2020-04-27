@@ -1,7 +1,10 @@
 ---
-layout: manual-interface-c
-id: interface_c_license_methods
-sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/c/methods/license.md
+layout: default-layout
+sideHeader: C Methods
+sourceCodeUrl: /programming/c-cplusplus/api-reference/c-method/license.md
+sidebarListFile: sidelist-c-methods
+needCollapsedSideBar: true
+needAutoGenerateSidebar: false
 ---
 
 # C API Reference - License Methods

@@ -1,7 +1,10 @@
 ---
-layout: manual-interface-c
-id: interface_c_video_methods
-sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/c/methods/video.md
+layout: default-layout
+sideHeader: C Methods
+sourceCodeUrl: /programming/c-cplusplus/api-reference/c-method/video.md
+sidebarListFile: sidelist-c-methods
+needCollapsedSideBar: true
+needAutoGenerateSidebar: false
 ---
 
 # C API Reference - Video Methods

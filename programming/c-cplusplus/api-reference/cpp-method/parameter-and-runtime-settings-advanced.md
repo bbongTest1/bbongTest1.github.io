@@ -1,7 +1,10 @@
 ---
-layout: manual-interface-cpp
-id: interface_cpp_parameter_advanced_methods
-sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/cpp/CBarcodeReader/methods/parameter-and-runtime-settings-advanced.md
+layout: default-layout
+sideHeader: C++ Methods
+sourceCodeUrl: /programming/c-cplusplus/api-reference/cpp-method/parameter-and-runtime-settings-advanced.md
+sidebarListFile: sidelist-cpp-methods
+needCollapsedSideBar: true
+needAutoGenerateSidebar: false
 ---
 
 # C++ API Reference - CBarcodeReader Parameter and Runtime Settings Advanced Methods

@@ -1,9 +1,11 @@
 ---
-layout: manual-interface-struct
-id: interface_struct_TextResultArray
-sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/struct/TextResultArray.md
+layout: default-layout
+sideHeader: C and C++ Struct
+sourceCodeUrl: programming/c-cplusplus/api-reference/struct/TextResultArray.md
+sidebarListFile: sidelist-c-cpp-structs
+needCollapsedSideBar: false
+needAutoGenerateSidebar: false
 ---
-
 
 # TextResultArray
 Stores the text result array.  

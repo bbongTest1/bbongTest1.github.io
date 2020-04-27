@@ -1,7 +1,10 @@
 ---
-layout: manual-interface-struct
-id: interface_struct_ExtendedResult
-sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/struct/ExtendedResult.md
+layout: default-layout
+sideHeader: C and C++ Struct
+sourceCodeUrl: programming/c-cplusplus/api-reference/struct/ExtendedResult.md
+sidebarListFile: sidelist-c-cpp-structs
+needCollapsedSideBar: false
+needAutoGenerateSidebar: false
 ---
 
 

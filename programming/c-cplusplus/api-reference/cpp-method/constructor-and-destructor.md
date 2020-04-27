@@ -1,9 +1,11 @@
 ---
-layout: manual-interface-cpp
-id: interface_cpp_constructor_and_destructor
-sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/cpp/CBarcodeReader/methods/constructor-and-destructor.md
+layout: default-layout
+sideHeader: C++ Methods
+sourceCodeUrl: /programming/c-cplusplus/api-reference/cpp-method/constructor-and-destructor.md
+sidebarListFile: sidelist-cpp-methods
+needCollapsedSideBar: true
+needAutoGenerateSidebar: false
 ---
-
 
 # C++ API Reference - CBarcodeReader Constructor and Destructor
 

@@ -1,7 +1,10 @@
 ---
-layout: manual-interface-c
-id: interface_c_initialize_and_destroy
-sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/c/methods/initialize-and-destroy.md
+layout: default-layout
+sideHeader: C Methods
+sourceCodeUrl: /programming/c-cplusplus/api-reference/c-method/initialize-and-destroy.md
+sidebarListFile: sidelist-c-methods
+needCollapsedSideBar: true
+needAutoGenerateSidebar: false
 ---
 
 

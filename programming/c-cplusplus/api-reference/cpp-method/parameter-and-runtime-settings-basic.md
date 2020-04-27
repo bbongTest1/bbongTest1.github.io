@@ -1,7 +1,10 @@
 ---
-layout: manual-interface-cpp
-id: interface_cpp_parameter_basic_methods
-sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/cpp/CBarcodeReader/methods/parameter-and-runtime-settings-basic.md
+layout: default-layout
+sideHeader: C++ Methods
+sourceCodeUrl: /programming/c-cplusplus/api-reference/cpp-method/parameter-and-runtime-settings-basic.md
+sidebarListFile: sidelist-cpp-methods
+needCollapsedSideBar: true
+needAutoGenerateSidebar: false
 ---
 
 

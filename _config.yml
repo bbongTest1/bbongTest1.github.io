@@ -3,6 +3,9 @@ repositoryUrl: https://github.com/bbongTest1/bbongTest1.github.io/blob/master
 docHomePage: /
 
 introduction: /introduction/
+c_cplusplus: /programming/c-cplusplus/
+parameters: /
+
 parameters_reference: /parameters/reference/
 enumerations: /parameters/reference/enum/
 structs: /programming/c-cplusplus/api-reference/struct/

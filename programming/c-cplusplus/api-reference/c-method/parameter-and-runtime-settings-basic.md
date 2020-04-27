@@ -1,7 +1,10 @@
 ---
-layout: manual-interface-c
-id: interface_c_parameters_basic_methods
-sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/c/methods/parameter-and-runtime-settings-basic.md
+layout: default-layout
+sideHeader: C Methods
+sourceCodeUrl: /programming/c-cplusplus/api-reference/c-method/parameter-and-runtime-settings-basic.md
+sidebarListFile: sidelist-c-methods
+needCollapsedSideBar: true
+needAutoGenerateSidebar: false
 ---
 
 # C API Reference - Parameter and Runtime Settings Basic Methods
