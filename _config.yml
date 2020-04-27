@@ -4,7 +4,10 @@ docHomePage: /
 
 introduction: /introduction/
 parameters_reference: /parameters/reference/
-enumerations: /parameters/reference/enums/
+enumerations: /parameters/reference/enum/
+structs: /programming/c-cplusplus/api-reference/struct/
+cpp_methods: /programming/c-cplusplus/api-reference/cpp-method/
+c_methods: /programming/c-cplusplus/api-reference/c-method/
 
 dynamsoft_logo: /assets/img-icon/dynamsoft-logo.png
 dbr_logo: /assets/img-icon/dbr-logo.png
