@@ -318,8 +318,10 @@ AustralianPost Code存在一段客户信息区，可以使用标准中定义的�
 
 [11]:./assets/format-specification/barcode-with-narrow-quietzone.png
 
-[12]:
-[13]:
+[12]:./parameters-of-algorithm-flow/recognise-acompanying-text.md
+
+[13]:./parameters-of-algorithm-flow/recognise-acompanying-text.md
+
 [14]:./parameters-of-algorithm-flow/recognise-acompanying-text.md
 
 
