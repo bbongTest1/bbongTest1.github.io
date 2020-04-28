@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 sideHeader: C Methods
-sourceCodeUrl: /programming/c-cplusplus/api-reference/c-method/parameter-and-runtime-settings-basic.md
+sourceCodeUrl: /programming/c-cplusplus/api-reference/c-api/parameter-and-runtime-settings-basic.md
 sidebarListFile: sidelist-c-methods
 needCollapsedSideBar: true
 needAutoGenerateSidebar: false
@@ -46,7 +46,21 @@ Returns error code. Possible return(s): DBR_OK; DBRERR_SET_MODE_ARGUMENT_ERROR.
 *You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
   
 #### Remark
-Check [Mode Argument List]({{ site.manual_interface_argument }}) for available argument settings.
+Check follow link for available modes and arguments:
+- [`AccompanyingTextRecognitionModes`]({{ site.parameters_reference }}image-parameter/AccompanyingTextRecognitionModes.html#mode-arguments)
+- [`BarcodeColourModes`]({{ site.parameters_reference }}image-parameter/BarcodeColourModes.html#mode-arguments)
+- [`BinarizationModes`]({{ site.parameters_reference }}image-parameter/BinarizationModes.html#mode-arguments)
+- [`ColourClusteringModes`]({{ site.parameters_reference }}image-parameter/ColourClusteringModes.html#mode-arguments)
+- [`ColourConversionModes`]({{ site.parameters_reference }}image-parameter/ColourConversionModes.html#mode-arguments)
+- [`DeformationResistingModes`]({{ site.parameters_reference }}image-parameter/DeformationResistingModes.html)#mode-arguments
+- [`ImagePreprocessingModes`]({{ site.parameters_reference }}image-parameter/ImagePreprocessingModes.html#mode-arguments)
+- [`IntermediateResultSavingMode`]({{ site.parameters_reference }}image-parameter/IntermediateResultSavingMode.html#mode-arguments)
+- [`LocalizationModes`]({{ site.parameters_reference }}image-parameter/LocalizationModes.html#mode-arguments)
+- [`RegionPredetectionModes`]({{ site.parameters_reference }}image-parameter/RegionPredetectionModes.html#mode-arguments)
+- [`ScaleUpModes`]({{ site.parameters_reference }}image-parameter/ScaleUpModes.html#mode-arguments)
+- [`TextAssistedCorrectionMode`]({{ site.parameters_reference }}image-parameter/TextAssistedCorrectionMode.html#mode-arguments)
+- [`TextFilterModes`]({{ site.parameters_reference }}image-parameter/TextFilterModes.html#mode-arguments)
+- [`TextureDetectionModes`]({{ site.parameters_reference }}image-parameter/TextureDetectionModes.html#mode-arguments) 
 
 #### Code Snippet
 ```c
@@ -89,7 +103,21 @@ Returns error code. Possible return(s): DBR_OK; DBRERR_GET_MODE_ARGUMENT_ERROR.
 *You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
 
 #### Remark
-Check [Mode Argument List]({{ site.manual_interface_argument }}) for available argument settings.
+Check follow link for available modes and arguments:
+- [`AccompanyingTextRecognitionModes`]({{ site.parameters_reference }}image-parameter/AccompanyingTextRecognitionModes.html#mode-arguments)
+- [`BarcodeColourModes`]({{ site.parameters_reference }}image-parameter/BarcodeColourModes.html#mode-arguments)
+- [`BinarizationModes`]({{ site.parameters_reference }}image-parameter/BinarizationModes.html#mode-arguments)
+- [`ColourClusteringModes`]({{ site.parameters_reference }}image-parameter/ColourClusteringModes.html#mode-arguments)
+- [`ColourConversionModes`]({{ site.parameters_reference }}image-parameter/ColourConversionModes.html#mode-arguments)
+- [`DeformationResistingModes`]({{ site.parameters_reference }}image-parameter/DeformationResistingModes.html)#mode-arguments
+- [`ImagePreprocessingModes`]({{ site.parameters_reference }}image-parameter/ImagePreprocessingModes.html#mode-arguments)
+- [`IntermediateResultSavingMode`]({{ site.parameters_reference }}image-parameter/IntermediateResultSavingMode.html#mode-arguments)
+- [`LocalizationModes`]({{ site.parameters_reference }}image-parameter/LocalizationModes.html#mode-arguments)
+- [`RegionPredetectionModes`]({{ site.parameters_reference }}image-parameter/RegionPredetectionModes.html#mode-arguments)
+- [`ScaleUpModes`]({{ site.parameters_reference }}image-parameter/ScaleUpModes.html#mode-arguments)
+- [`TextAssistedCorrectionMode`]({{ site.parameters_reference }}image-parameter/TextAssistedCorrectionMode.html#mode-arguments)
+- [`TextFilterModes`]({{ site.parameters_reference }}image-parameter/TextFilterModes.html#mode-arguments)
+- [`TextureDetectionModes`]({{ site.parameters_reference }}image-parameter/TextureDetectionModes.html#mode-arguments) 
 
 #### Code Snippet
 ```c

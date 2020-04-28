@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 sideHeader: C++ Methods
-sourceCodeUrl: /programming/c-cplusplus/api-reference/cpp-method/parameter-and-runtime-settings-advanced.md
+sourceCodeUrl: /programming/c-cplusplus/api-reference/cpp-api/parameter-and-runtime-settings-advanced.md
 sidebarListFile: sidelist-cpp-methods
 needCollapsedSideBar: true
 needAutoGenerateSidebar: false
