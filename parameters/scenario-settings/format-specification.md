@@ -59,9 +59,13 @@ keywords: nonstandard barcode, specification
 
 下面是正常QR和镜像QR的两个示例图：
 
-![normal QR][1]&emsp;&emsp;&emsp; ![mirror QR][2]
+正常QR
 
-&emsp;&emsp; 正常QR&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 镜像QR
+![normal QR][1] 
+
+镜像QR
+
+![mirror QR][2]
 
 下面是示例Json模板，在该示例中我们配置QR码型进行镜像处理。
 ```javascript
@@ -270,7 +274,7 @@ AustralianPost Code存在一段客户信息区，可以使用标准中定义的�
             "BarcodeFormatIds": [                 
                 "BF_CODE_39"
             ], 
-            "ModuleSizeRangeArray"：[
+            "ModuleSizeRangeArray":[
                 {
                   "MaxValue":100,
                   "MinValue":10
@@ -294,7 +298,6 @@ AustralianPost Code存在一段客户信息区，可以使用标准中定义的�
 
 - AccompanyingTextRecognitionModes    
 参考文档 [RecogniseAcompanyingText]([14])
-
 
 [1]:./assets/format-specification/normal-qr.png
 
@@ -798,42 +801,5 @@ AustralianPost Code存在一段客户信息区，可以使用标准中定义的�
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--
 
 
