@@ -7,6 +7,7 @@ keywords: acompanyingText,OCR
 在某些情景下，码区附近会有一些伴随文本，可能是码值也可能是其他额外信息。你可能需要这些伴随文本的信息进行码值校验、码区解码失败时的辅助信息或者满足其他需求。DBR提供了利用OCR进行伴随文本识别的功能，通过 `AcompanyingTextRecognitionModes` 进行配置，该参数是 `AcompanyingTextRecognitionMode` 的数组，可配置多个，DBR会依次循环每一个 mode 来处理。
 
 `AcompanyingTextRecognitionMode` 有如下枚举值
+
 | 枚举名    | 枚举值 | 备注                       |
 |:-----------:|:--------:|:--------------------:|
 | ATRM_SKIP | 0x00   | 不识别伴随文本            |
