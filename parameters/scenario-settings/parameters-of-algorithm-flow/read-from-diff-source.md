@@ -8,10 +8,11 @@ DBR算法提供多种方式对不同来源的图像进行读取，本文会对�
 1. [文件读取](#文件读取)
 2. [内存读取](#内存读取)
 3. [视频流读取](#视频流读取)
+
 ## 文件读取
 对于图片文件，DBR提供以下两种接口读取处理。
-* [DecodeFile]()
-* [DecodeFileInMemory]()
+- [DecodeFile]()
+- [DecodeFileInMemory]()
 
 以下是两个接口的示例代码
 ``` c++
@@ -160,18 +161,17 @@ using std::cin;
 //解码完成时的回调函数
 void textResultcallback(int frameId, TextResultArray *pResults, void * pUser)
 {
-	for (int iIndex = 0; iIndex < pResults->resultsCount; iIndex++)
-	{
-		printf("Barcode %d, Value %s\n", iIndex + 1, pResults->results[iIndex]->barcodeText);
-	}
-
-	CBarcodeReader::FreeTextResults(&pResults);
+   for (int iIndex = 0; iIndex < pResults->resultsCount; iIndex++)
+   {
+      printf("Barcode %d, Value %s\n", iIndex + 1, pResults->results[iIndex]->barcodeText);
+   }
+   CBarcodeReader::FreeTextResults(&pResults);
 }
 
 //解码出现错误时的回调函数
 void errorcb(int frameId, int errorCode, void * pUser)
 {
-	printf("frame = %d errorcode = %d, %s\n", frameId, errorCode, CBarcodeReader::GetErrorString(errorCode));
+   printf("frame = %d errorcode = %d, %s\n", frameId, errorCode, CBarcodeReader::GetErrorString(errorCode));
 }
 
 int main()
