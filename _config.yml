@@ -8,6 +8,7 @@ parameters: /
 enhancements: /enhancements/
 
 parameters_reference: /parameters/reference/
+scenario_settings: /parameters/scenario-settings/
 enumerations: /parameters/reference/enum/
 structs: /programming/c-cplusplus/api-reference/struct/
 cpp_methods: /programming/c-cplusplus/api-reference/cpp-api/
