@@ -81,7 +81,7 @@ DBR 允许用户以配置文件的形式来管理参数，配置文件遵循 Jso
 ```c++
 CBarcodeReader* reader = new CBarcodeReader();         
 reader->InitLicense("这里填入license");        
-int ret；  
+int ret; 
 char sError[512];         
 ret = reader->InitRuntimeSettingsWithFile("JsonTemplate.json",CM_OVERWRITE,
 sError,512); //通过Json文件路径载入一个模板配置  
