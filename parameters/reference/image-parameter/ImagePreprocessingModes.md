@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 sideHeader: Parameter Reference
-sourceCodeUrl: parameters/reference/image-parameter/ImagePreprocessingModes.md
+sourceCodeUrl: /parameters/reference/image-parameter/ImagePreprocessingModes.md
 sidebarListFile: sidelist-parameters-references
 needCollapsedSideBar: true
 needAutoGenerateSidebar: false

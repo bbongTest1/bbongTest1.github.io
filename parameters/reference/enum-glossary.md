@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 sideHeader: Parameters
-sourceCodeUrl: parameters/reference/enum-glossary.md
+sourceCodeUrl: /parameters/reference/enum-glossary.md
 sidebarListFile: sidelist-parameters
 needCollapsedSideBar: false
 needAutoGenerateSidebar: false

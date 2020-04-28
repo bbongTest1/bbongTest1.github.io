@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 sideHeader: C and C++ Structs
-sourceCodeUrl: programming/c-cplusplus/api-referecnde/struct-glossary.md
+sourceCodeUrl: /programming/c-cplusplus/api-referecnde/struct-glossary.md
 sidebarListFile: sidelist-c-cpp
 needCollapsedSideBar: false
 needAutoGenerateSidebar: false

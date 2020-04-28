@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 sideHeader: Parameter Reference
-sourceCodeUrl: parameters/reference/format-specification/image-process-control.md
+sourceCodeUrl: /parameters/reference/format-specification/image-process-control.md
 sidebarListFile: sidelist-parameters-references
 needCollapsedSideBar: true
 needAutoGenerateSidebar: false

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 sideHeader: Parameter Reference
-sourceCodeUrl: parameters/reference/format-specification/format-control.md
+sourceCodeUrl: /parameters/reference/format-specification/format-control.md
 sidebarListFile: sidelist-parameters-references
 needCollapsedSideBar: true
 needAutoGenerateSidebar: false

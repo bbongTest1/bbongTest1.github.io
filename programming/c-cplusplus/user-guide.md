@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 sideHeader: User Guide for C++
-sourceCodeUrl: programming/c-cplusplus/user-guide.md
+sourceCodeUrl: /programming/c-cplusplus/user-guide.md
 sidebarListFile: sidelist-auto-generate
 needCollapsedSideBar: false
 needAutoGenerateSidebar: true

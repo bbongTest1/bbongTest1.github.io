@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 sideHeader: Parameter Reference
-sourceCodeUrl: parameters/reference/image-parameter/DeformationResistingModes.md
+sourceCodeUrl: /parameters/reference/image-parameter/DeformationResistingModes.md
 sidebarListFile: sidelist-parameters-references
 needCollapsedSideBar: true
 needAutoGenerateSidebar: false

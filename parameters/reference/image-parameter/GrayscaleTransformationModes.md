@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 sideHeader: Parameter Reference
-sourceCodeUrl: parameters/reference/image-parameter/GrayscaleTransformationModes.md
+sourceCodeUrl: /parameters/reference/image-parameter/GrayscaleTransformationModes.md
 sidebarListFile: sidelist-parameters-references
 needCollapsedSideBar: true
 needAutoGenerateSidebar: false

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 sideHeader: Parameter Reference
-sourceCodeUrl: parameters/reference/image-parameter/TextAssistedCorrectionMode.md
+sourceCodeUrl: /parameters/reference/image-parameter/TextAssistedCorrectionMode.md
 sidebarListFile: sidelist-parameters-references
 needCollapsedSideBar: true
 needAutoGenerateSidebar: false

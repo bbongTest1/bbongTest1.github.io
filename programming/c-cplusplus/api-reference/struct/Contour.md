@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 sideHeader: C and C++ Struct
-sourceCodeUrl: programming/c-cplusplus/api-reference/struct/Contour.md
+sourceCodeUrl: /programming/c-cplusplus/api-reference/struct/Contour.md
 sidebarListFile: sidelist-c-cpp-structs
 needCollapsedSideBar: false
 needAutoGenerateSidebar: false

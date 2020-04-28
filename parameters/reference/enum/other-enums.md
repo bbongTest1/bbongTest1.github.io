@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 sideHeader: Enumerations
-sourceCodeUrl: parameters/reference/enums/other-enums.md
+sourceCodeUrl: /parameters/reference/enums/other-enums.md
 sidebarListFile: sidelist-enums
 needCollapsedSideBar: true
 needAutoGenerateSidebar: false

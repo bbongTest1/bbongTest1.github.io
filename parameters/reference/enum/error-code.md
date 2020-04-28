@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 sideHeader: Enumerations
-sourceCodeUrl: parameters/reference/enums/error-code.md
+sourceCodeUrl: /parameters/reference/enums/error-code.md
 sidebarListFile: sidelist-enums
 needCollapsedSideBar: true
 needAutoGenerateSidebar: false
