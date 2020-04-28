@@ -291,13 +291,13 @@ AustralianPost Code存在一段客户信息区，可以使用标准中定义的�
 ## 其他
 `FormatSpecification` 中的其他参数的用法我们会在在其它相关文档中详细介绍，本文不再展开说明
 - BarcodeAngleRangeArray、BarcodeBytesLengthRangeArray、BarcodeHeightRangeArray、BarcodeTextLengthRangeArray、BarcodeWidthRangeArray、BarcodeTextRegExPattern    
-参考文档 [解码结果]([12])
+参考文档 [解码结果][12]
 
 - DeblurLevel   
-参考文档 [通常的采样解码]([13])
+参考文档 [通常的采样解码][13]
 
 - AccompanyingTextRecognitionModes    
-参考文档 [RecogniseAcompanyingText]([14])
+参考文档 [RecogniseAcompanyingText][14]
 
 [1]:./assets/format-specification/normal-qr.png
 
