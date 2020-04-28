@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 sideHeader: C Methods
-sourceCodeUrl: /programming/c-cplusplus/api-reference/c-method/video.md
+sourceCodeUrl: /programming/c-cplusplus/api-reference/c-api/video.md
 sidebarListFile: sidelist-c-methods
 needCollapsedSideBar: true
 needAutoGenerateSidebar: false

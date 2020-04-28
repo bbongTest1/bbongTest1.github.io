@@ -10,8 +10,8 @@ enhancements: /enhancements/
 parameters_reference: /parameters/reference/
 enumerations: /parameters/reference/enum/
 structs: /programming/c-cplusplus/api-reference/struct/
-cpp_methods: /programming/c-cplusplus/api-reference/cpp-method/
-c_methods: /programming/c-cplusplus/api-reference/c-method/
+cpp_methods: /programming/c-cplusplus/api-reference/cpp-api/
+c_methods: /programming/c-cplusplus/api-reference/c-api/
 
 
 dynamsoft_logo: /assets/img-icon/dynamsoft-logo.png

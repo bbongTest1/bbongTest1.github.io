@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 sideHeader: C Methods
-sourceCodeUrl: /programming/c-cplusplus/api-reference/c-method/status-retrieval.md
+sourceCodeUrl: /programming/c-cplusplus/api-reference/c-api/status-retrieval.md
 sidebarListFile: sidelist-c-methods
 needCollapsedSideBar: true
 needAutoGenerateSidebar: false

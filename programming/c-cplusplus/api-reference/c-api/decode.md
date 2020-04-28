@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 sideHeader: C Methods
-sourceCodeUrl: /programming/c-cplusplus/api-reference/c-method/decode.md
+sourceCodeUrl: /programming/c-cplusplus/api-reference/c-api/decode.md
 sidebarListFile: sidelist-c-methods
 needCollapsedSideBar: false
 needAutoGenerateSidebar: false

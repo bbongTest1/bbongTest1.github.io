@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 sideHeader: C++ Methods
-sourceCodeUrl: /programming/c-cplusplus/api-reference/cpp-method/video.md
+sourceCodeUrl: /programming/c-cplusplus/api-reference/cpp-api/video.md
 sidebarListFile: sidelist-cpp-methods
 needCollapsedSideBar: true
 needAutoGenerateSidebar: false

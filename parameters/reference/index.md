@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 sideHeader: Parameters
-sourceCodeUrl: /parameters/reference/parameter-glossary.md
+sourceCodeUrl: /parameters/reference/index.md
 sidebarListFile: sidelist-parameters
 needCollapsedSideBar: false
 needAutoGenerateSidebar: false

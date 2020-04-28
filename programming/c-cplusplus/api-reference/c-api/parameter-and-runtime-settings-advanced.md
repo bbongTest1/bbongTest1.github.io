@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 sideHeader: C Methods
-sourceCodeUrl: /programming/c-cplusplus/api-reference/c-method/parameter-and-runtime-settings-advanced.md
+sourceCodeUrl: /programming/c-cplusplus/api-reference/c-api/parameter-and-runtime-settings-advanced.md
 sidebarListFile: sidelist-c-methods
 needCollapsedSideBar: true
 needAutoGenerateSidebar: false
