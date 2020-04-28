@@ -60,7 +60,8 @@ delete reader;
 
    ![alt dbr_qr][1]   
    下面是一个示例程序,在这个例子中我们利用opencv进行图像数据读取，并调用 DecodeBuffer 接口   
-``` c++
+
+``` cpp
 #include "DynamsoftBarcodeReader.h"
 #include <opencv2/opencv.hpp>
 using namespace cv;
@@ -89,6 +90,7 @@ int main()
 	return 0;
 }
 ```
+
 - [DecodeBase64String]()   
 对于Base64编码的图像数据使用该接口进行读取解码。
 - [DecodeDIB]()   
@@ -227,7 +229,6 @@ int main()
    reader.StopFrameDecoding();
    return 0;
 }
-
 ```
 
 [1]: assets/read-from-diff-source/dbr_qr.png
