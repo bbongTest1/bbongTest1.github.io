@@ -48,17 +48,19 @@ DBR 允许用户以配置文件的形式来管理参数，配置文件遵循 Jso
 下面是示例的Json模板和程序。在这个例子中我们使用 `DecodeFile` 的参数  `PtemlateName` 来指定 `Name` 为 "IP1" 的 `ImageParameter`。  
 
 ```json
-// 单个ImageParameter示例
+// 单个 ImageParameter
 {
     "Version": "3.0",
     "ImageParameter": {                   
         "Name": "IP1",
-        "Description": "This is an imageParameter", 
+        "Description": "This is a single ImageParameter", 
         "BarcodeFormatIds": ["BF_ALL"]
      }
 }
+```
 
-// 多个ImageParameter示例
+```json
+// 多个 ImageParameter
 {
     "Version": "3.0", 
     "ImageParameterArray": [                        
@@ -81,7 +83,7 @@ DBR 允许用户以配置文件的形式来管理参数，配置文件遵循 Jso
 ```c++
 CBarcodeReader* reader = new CBarcodeReader();         
 reader->InitLicense("这里填入license");        
-int ret；  
+int ret;
 char sError[512];         
 ret = reader->InitRuntimeSettingsWithFile("JsonTemplate.json",CM_OVERWRITE,
 sError,512); //通过Json文件路径载入一个模板配置  
@@ -92,6 +94,7 @@ CBarcodeReader::FreeTextResults(&paryResult);
 delete runtimeSettings;         
 delete reader;
 ```
+
 - FormatSpecification   
 如果用户仅仅想要对某一特定的码型进行某些参数的配置，那么应该使用 `FormatSpecification`。该对象定义某一具体码型采用的配置，如果配置和全局的
 ImageParameter 配置不一致，那么 `FormatSpecification` 有更高的优先级。具体的可配置参数和适用场景参考我们的说明文档 [特定码型的配置参数]() 。   
@@ -99,6 +102,7 @@ ImageParameter 配置不一致，那么 `FormatSpecification` 有更高的优先
 `FormatSpecification` 对象，通过定义不同的 `Name` 来区分。
 使用 `FormatSpecificationNameArray` 这一key来指定若干 `FormatSpecification` 的 `Name` 来明确需要使用的 `FormatSpecification`。   
 下面是一个示例。在这个例子中，我们定义了一个名为 “FS_1” 的 `FormatSpecification`，并使用了它。
+
 ```json
 {
     "ImageParameter": {
@@ -115,6 +119,7 @@ ImageParameter 配置不一致，那么 `FormatSpecification` 有更高的优先
     "Version": "3.0"
 }
 ```
+
 - RegionDefinition  
 如果你关心的区域只是图片上某一特定区域而非整张图片或者你想对图片的特定区域做额外配置，你应该使用 `RegionDefinition`。设置区域可以帮助 DBR 缩小要处理的图片范围，有利于提高速度。   
 `RegionDefinition` 对象定义图像指定区域内的配置，如果该配置和全局的 `ImageParameter` 配置不一致，那么 `RegionDefinition` 有更高的优先级。具体可配置的参数参考我们关于 `RegionDefinition` 的 [详细说明文档]([1])。   
