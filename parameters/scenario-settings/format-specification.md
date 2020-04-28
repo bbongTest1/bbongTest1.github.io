@@ -50,11 +50,13 @@ keywords: nonstandard barcode, specification
 此参数指定解码时的镜像处理模式。因为镜头拍摄等原因，有时候会出现图像与真实场景刚好是镜像的情况，对于2D码来说，镜像可能会导致DBR无法正常解码，可配置该参数处理这种情况。DBR 默认用 [MM_NORMAL]() 来进行处理，即只会尝试解原图。   
 该参数有以下枚举
 
+
 | 枚举名    | 枚举值 | 备注                 |
 |-----------|--------|----------------------|
 | MM_NORMAL | 0x01   | 保持图像原样进行解码处理        |
 | MM_MIRROR | 0x02   | 对图像镜像处理后进行解码处理         |
 | MM_BOTH   | 0x04   | 以上两种方式都尝试进行。默认值 |
+
 下面是正常QR和镜像QR的两个示例图：
 
 ![normal QR][1]&emsp;&emsp;&emsp; ![mirror QR][2]
@@ -92,7 +94,8 @@ keywords: nonstandard barcode, specification
 ![code39 without start and end pattern][4]
 
 下面是示例Json模板，在这个例子中我们设置了解码Code39不需要开始符和结尾符。
-```javascript
+
+```json
 {
     "ImageParameter": {
         "Name": "ImageParameter1", 
@@ -133,7 +136,8 @@ keywords: nonstandard barcode, specification
 ![code128-deviation][6]
 
 正常解码无法解出码值，这样的情况我们可以设置AllModuleDeviation为2，这样在解码时就会考虑2倍moduleSize的偏差值，从而正确解出码值。下面的Json模板演示完整的配置。
-```javascript
+
+```json
 {
     "ImageParameter": {
         "Name": "ImageParameter1", 
@@ -175,7 +179,7 @@ keywords: nonstandard barcode, specification
 
 DBR默认是无法正确读取条码的。这种情况下我们将 `HeadModuleRatio` 和 `TailModuleRatio` 分别设为 `"211331"` 和 `"2332223"`， `Code128Subset` 设为 `"C"` 则能够解出该非标准条码。完整的Json配置如下
 
-```Javascript
+```json
 {
     "ImageParameter": {
         "Name": "ImageParameter1", 
@@ -223,7 +227,8 @@ AustralianPost Code存在一段客户信息区，可以使用标准中定义的�
 ![barcode-narrow-wide-quietzone][11]
 
 如果我们设置了如下模板，静区要求 3 moduleSize，这样的话 DBR 没法解出这张图，`MinQuietZoneWidth` 需要更改为1或者更小，即可正常解码。
-```Javascript
+
+```json
 {
     "ImageParameter": {
         "Name": "ImageParameter1", 
@@ -252,7 +257,7 @@ AustralianPost Code存在一段客户信息区，可以使用标准中定义的�
 
 示例Json模板：
 
- ```Javascript
+```json
 {
     "ImageParameter": {
         "Name": "ImageParameter1", 
