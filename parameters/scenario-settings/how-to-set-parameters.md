@@ -45,7 +45,8 @@ DBR 允许用户以配置文件的形式来管理参数，配置文件遵循 Jso
 若要使用Json模板中定义的 `ImageParameter` 配置， 首先我们需要用 `InitRuntimeSettingsWithFile` 载入一个Json文件，
 或者利用 `InitRuntimeSettingsWithString` 载入一个 Json 字符串，然后在调用DBR解码函数的时候通过 `ImageParameter` 的 `Name` 来指定需要应用的具体配置。如果没有指定，则会使用DBR默认的 `ImageParameter` 配置对象。   
 `InitRuntimeSettingsWithFile` 和 `InitRuntimeSettingsWithFile` 接口中的 `emSettingPriority` 参数用来指定载入Json配置时，对DBR的默认配置如何操作，若设 `CM_IGNORE`, 则不会改变默认配置， 如设为 `CM_OVERWRITE`，将逐个使用刚刚载入的 `ImageParameter` 配置对默认模板做merge操作。   
-下面是示例的Json模板和程序。在这个例子中我们使用 `DecodeFile` 的参数  `PtemlateName` 来指定 `Name` 为 "IP1" 的 `ImageParameter`。   
+下面是示例的Json模板和程序。在这个例子中我们使用 `DecodeFile` 的参数  `PtemlateName` 来指定 `Name` 为 "IP1" 的 `ImageParameter`。  
+
 ```json
 // 单个ImageParameter示例
 {
@@ -75,7 +76,8 @@ DBR 允许用户以配置文件的形式来管理参数，配置文件遵循 Jso
         }
     ]
 }
-```   
+``` 
+
 ```c++
 CBarcodeReader* reader = new CBarcodeReader();         
 reader->InitLicense("这里填入license");        
