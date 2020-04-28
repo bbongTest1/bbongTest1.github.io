@@ -1,12 +1,11 @@
 ---
 layout: default-layout
-sideHeader: Enumerations
+sideHeader: Parameters
 sourceCodeUrl: parameters/reference/enum-glossary.md
-sidebarListFile: sidelist-enums
-needCollapsedSideBar: true
+sidebarListFile: sidelist-parameters
+needCollapsedSideBar: false
 needAutoGenerateSidebar: false
 ---
-
 
 # Dynamesoft Barcode Reader - Enumerations
 

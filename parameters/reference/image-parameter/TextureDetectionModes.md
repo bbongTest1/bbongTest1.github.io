@@ -1,8 +1,10 @@
 ---
-layout: manual-parameter
-id: parameter_image_TextureDetectionModes
-sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParameter/TextureDetectionModes.md
-listFile: parametersList
+layout: default-layout
+sideHeader: Parameter Reference
+sourceCodeUrl: parameters/reference/image-parameter/TextureDetectionModes.md
+sidebarListFile: sidelist-parameters-references
+needCollapsedSideBar: true
+needAutoGenerateSidebar: false
 ---
 
 

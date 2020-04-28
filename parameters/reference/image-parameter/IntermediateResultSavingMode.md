@@ -1,8 +1,10 @@
 ---
-layout: manual-parameter
-id: parameter_image_IntermediateResultSavingMode
-sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParameter/IntermediateResultSavingMode.md
-listFile: parametersList
+layout: default-layout
+sideHeader: Parameter Reference
+sourceCodeUrl: parameters/reference/image-parameter/IntermediateResultSavingMode.md
+sidebarListFile: sidelist-parameters-references
+needCollapsedSideBar: true
+needAutoGenerateSidebar: false
 ---
 
 # ImageParameter Object - Result Control

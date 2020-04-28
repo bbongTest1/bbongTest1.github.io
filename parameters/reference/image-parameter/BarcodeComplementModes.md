@@ -1,8 +1,10 @@
 ---
-layout: manual-parameter
-id: parameter_image_BarcodeComplementModes
-sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParameter/BarcodeComplementModes.md
-listFile: parametersList
+layout: default-layout
+sideHeader: Parameter Reference
+sourceCodeUrl: parameters/reference/image-parameter/BarcodeComplementModes.md
+sidebarListFile: sidelist-parameters-references
+needCollapsedSideBar: true
+needAutoGenerateSidebar: false
 ---
 
 # ImageParameter Object - Image Process Control

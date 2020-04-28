@@ -1,8 +1,10 @@
 ---
-layout: manual-parameter
-id: parameter_image_content
-sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParameter/content-organization-control.md
-listFile: parametersList
+layout: default-layout
+sideHeader: Parameter Reference
+sourceCodeUrl: parameters/reference/image-parameter/content-organization-control.md
+sidebarListFile: sidelist-parameters-references
+needCollapsedSideBar: true
+needAutoGenerateSidebar: false
 ---
 
 # ImageParameter Object - Content Organization Control Parameters

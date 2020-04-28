@@ -1,3 +1,11 @@
+---
+layout: default-layout
+sideHeader: C API
+sourceCodeUrl: programming/c-cplusplus/api-referecnde/c-function-pointer.md
+sidebarListFile: sidelist-c-cpp
+needCollapsedSideBar: false
+needAutoGenerateSidebar: false
+---
 
 # C API Reference - Function Pointer
 

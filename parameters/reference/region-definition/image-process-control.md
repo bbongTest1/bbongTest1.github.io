@@ -1,8 +1,10 @@
 ---
-layout: manual-parameter
-id: parameter_region_image_process
-sourceCodeUrl: /dbr-detailed-info/manual/parameters/regionDefinition/image-process-control.md
-listFile: parametersList
+layout: default-layout
+sideHeader: Parameter Reference
+sourceCodeUrl: parameters/reference/region-definition/image-process-control.md
+sidebarListFile: sidelist-parameters-references
+needCollapsedSideBar: true
+needAutoGenerateSidebar: false
 ---
 
 

@@ -1,8 +1,10 @@
 ---
-layout: manual-parameter
-id: parameter_main
-sourceCodeUrl: /dbr-detailed-info/manual/parameters.md
-listFile: parametersList
+layout: default-layout
+sideHeader: Parameters
+sourceCodeUrl: parameters/reference/parameter-glossary.md
+sidebarListFile: sidelist-parameters
+needCollapsedSideBar: false
+needAutoGenerateSidebar: false
 ---
 
 

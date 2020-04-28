@@ -1,8 +1,10 @@
 ---
-layout: manual-parameter
-id: parameter_image_ColourClusteringModes
-sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParameter/ColourClusteringModes.md
-listFile: parametersList
+layout: default-layout
+sideHeader: Parameter Reference
+sourceCodeUrl: parameters/reference/image-parameter/ColourClusteringModes.md
+sidebarListFile: sidelist-parameters-references
+needCollapsedSideBar: true
+needAutoGenerateSidebar: false
 ---
 
 # ImageParameter Object - Image Process Control

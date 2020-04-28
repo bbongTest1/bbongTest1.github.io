@@ -1,10 +1,11 @@
 ---
-layout: manual-parameter
-id: parameter_image_DeformationResistingModes
-sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParameter/DeformationResistingModes.md
-listFile: parametersList
+layout: default-layout
+sideHeader: Parameter Reference
+sourceCodeUrl: parameters/reference/image-parameter/DeformationResistingModes.md
+sidebarListFile: sidelist-parameters-references
+needCollapsedSideBar: true
+needAutoGenerateSidebar: false
 ---
-
 
 # ImageParameter Object - Image Process Control
 

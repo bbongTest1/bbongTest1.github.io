@@ -1,8 +1,10 @@
 ---
-layout: manual-parameter
-id: parameter_format_format
-sourceCodeUrl: /dbr-detailed-info/manual/parameters/formatSpecification/format-control.md
-listFile: parametersList
+layout: default-layout
+sideHeader: Parameter Reference
+sourceCodeUrl: parameters/reference/format-specification/format-control.md
+sidebarListFile: sidelist-parameters-references
+needCollapsedSideBar: true
+needAutoGenerateSidebar: false
 ---
 
 # FormatSpecification Object - Format Control

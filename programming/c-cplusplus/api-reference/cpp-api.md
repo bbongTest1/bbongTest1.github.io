@@ -1,7 +1,10 @@
 ---
-layout: manual-interface
-id: interface_cpp
-sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/cpp/index.md
+layout: default-layout
+sideHeader: C++ API
+sourceCodeUrl: programming/c-cplusplus/api-referecnde/cpp-api.md
+sidebarListFile: sidelist-c-cpp
+needCollapsedSideBar: false
+needAutoGenerateSidebar: false
 ---
 
 # Dynamsoft Barcode Reader SDK - C++ API Reference

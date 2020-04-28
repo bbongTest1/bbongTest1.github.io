@@ -1,7 +1,10 @@
 ---
-layout: manual-interface-struct
-id: interface_struct_main
-sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/struct/index.md
+layout: default-layout
+sideHeader: C and C++ Structs
+sourceCodeUrl: programming/c-cplusplus/api-referecnde/struct-glossary.md
+sidebarListFile: sidelist-c-cpp
+needCollapsedSideBar: false
+needAutoGenerateSidebar: false
 ---
 
 
