@@ -18,14 +18,14 @@ sourceCodeUrl: /index.md
    - C/C++
       - [User Guide]({{ site.c_cplusplus }}user-guide.html)
       - API Referece
-         - [C]({{ site.c_cplusplus }}api-reference/c-api.html)
-         - [C++]({{ site.c_cplusplus }}api-reference/cpp-api.html)
+         - [C]({{ site.c_cplusplus }}api-reference/c-api/)
+         - [C++]({{ site.c_cplusplus }}api-reference/cpp-api/)
       - Samples and Demos
 
 - Parameters
-   - [Reference]({{ site.parameters_reference }}parameter-glossary.html)
-   - Scenario Settings
-      - xxx
+   - [Reference]({{ site.parameters_reference }})
+   - [Scenario Settings]({{ site.scenario_settings }})
+      - [Parameters of Algorithm Flow]({{ site.scenario_settings }}parameters-of-algorithm-flow/)
    - Example Image Settings
 
 - Enhancements
