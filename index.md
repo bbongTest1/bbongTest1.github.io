@@ -18,8 +18,8 @@ sourceCodeUrl: /index.md
    - C/C++
       - [User Guide]({{ site.c_cplusplus }}user-guide.html)
       - API Referece
-         - [C]({{ site.c_cplusplus }}c-api.html)
-         - [C++]({{ site.c_cplusplus }}cpp-api.html)
+         - [C]({{ site.c_cplusplus }}api-reference/c-api.html)
+         - [C++]({{ site.c_cplusplus }}api-reference/cpp-api.html)
       - Samples and Demos
 
 - Parameters
