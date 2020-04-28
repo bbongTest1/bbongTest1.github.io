@@ -121,6 +121,7 @@ ImageParameter 配置不一致，那么 `FormatSpecification` 有更高的优先
 在Json中，用户通过 `RegionDefinitionArray` 来定义一个或多个 `RegionDefinition`，以不同的 `Name` 区分。
 通过 `RegionDefinitionNameArray` 来明确使用哪些 `RegionDefinition`。   
 下面是一个示例，该例子中，我们定义了2个 `RegionDefinition`，”RP_1” 和 “RP_2”，并使用了他们。
+
 ```json
 {
     "ImageParameter": {
@@ -145,7 +146,6 @@ ImageParameter 配置不一致，那么 `FormatSpecification` 有更高的优先
     ], 
     "Version": "3.0"
 }
-
 ```
 
 [1]: parameters-of-algorithm-flow\manually-define-region-of-interest.md
