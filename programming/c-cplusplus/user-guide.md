@@ -330,10 +330,9 @@ Below is a template for your reference. To learn more about the APIs, you can ch
 
 
 ## Useful Links
-
-### [Licensing and Distributing]()
-### [How-to Guides]()
-### [FAQ]()
+- [Licensing and Distributing]()
+- [How-to Guides]()
+- [FAQ]()
 
 ## Contact Us
 If there are any questions, please feel free to contact [support@dynamsoft.com](mailto:support@dynamsoft.com).
