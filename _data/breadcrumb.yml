@@ -1,2 +1,5 @@
-introduction: Introduction
+introduction: 
+    text: Introduction
+    url: /introduction/
+
 parameters: Parameters
