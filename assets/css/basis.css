@@ -244,7 +244,7 @@ ul.mainPage {
     list-style: none;
 }
 
-#crumbs > li + li:before {
+#crumbs ul > li + li:before {
     color: #CCCCCC;
     content: "/ ";
     padding: 0 5px;
