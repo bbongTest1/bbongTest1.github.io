@@ -10,9 +10,9 @@ programming:
     text: Programming
     url: /programming/
 
-c-cplus-plus:
+c-cplusplus:
     text: C & C++
-    url: /programming/c-cplus-plus/
+    url: /programming/c-cplusplus/
 
 parameters: 
     text: Parameters
