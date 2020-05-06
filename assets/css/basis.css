@@ -235,9 +235,68 @@ ul.mainPage {
 	line-height: 14px;
 }
 
-.breadcrumb > li + li:before {
-    color: #CCCCCC;
-    content: "/ ";
-    padding: 0 5px;
+
+#crumbs{
+    position: relative;
+}
+#crumbs ul{
+    list-style: none;
+}
+#crumbs ul li a{
+    position: relative;
+    float: left;
+    margin-right: 30px;
+    display: inline-block;
+    height: 30px;
+    padding:10px 20px 0 20px;
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+#crumbs ul li a:after{
+    position: absolute;
+    top:0px;
+    right:-20px;
+    content: "";
+    border-left: 20px solid #3498db;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+#crumbs ul li a:before{
+    position: absolute;
+    top:0px;
+    left:-20px;
+    content:"";
+    border-left: 20px solid transparent;
+    border-top: 20px solid #3498db;
+    border-bottom: 20px solid #3498db;
+}
+#crumbs ul li:first-child a{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    //background-color: red;
+}
+#crumbs ul li:first-child a:before{
+    display:none;
+}
+#crumbs ul li:last-child a{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    //background-color: red;
+}
+#crumbs ul li:last-child a:after{
+    display:none;
+}
+#crumbs ul li a:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+#crumbs ul li a:hover:after{
+    border-left-color: rgba(0,0,0,0.8);
+}
+#crumbs ul li a:hover:before{
+    border-top-color: rgba(0,0,0,0.8);
+	border-bottom-color:  rgba(0,0,0,0.8);
 }
 
