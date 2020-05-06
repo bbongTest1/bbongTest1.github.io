@@ -1,3 +1,4 @@
 {% assign data_size = site.data.breadcrumb | size %}
 {{ data_size }}
-{{ site.data.breadcrumb.introduction.text }}
+{% assign level = "introduction" %}
+{{ site.data.breadcrumb.{{ level }}.text }}
