@@ -1,5 +1,40 @@
-introduction: 
-    text: Introduction
-    url: /introduction/
+dbr_doc:
+    text: Homepage
+    url: /
 
-parameters: Parameters
+comparison-tools: 
+    text: Comparison Tools
+    url: /introduction/comparison-tools/
+
+programming: 
+    text: Programming
+    url: /programming/
+
+c-cplus-plus:
+    text: C & C++
+    url: /programming/c-cplus-plus/
+
+parameters: 
+    text: Parameters
+    url: /parameters/
+
+reference:
+    text: Reference
+    url: /parameters/reference/
+
+scenario-settings:
+    text: Scenario Settings
+    url: /parameters/scenario-settings/
+
+example-image-settings:
+    text: Example Image Setting
+    url: /parameters/example-image-settings/
+
+enhancements:
+    text: Enhancements
+    url: /enhancements/
+
+resources:
+    text: Resources
+    url: /resources/
+

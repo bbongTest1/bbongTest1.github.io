@@ -1,4 +1,10 @@
-{% assign data_size = site.data.breadcrumb | size %}
-{{ data_size }}
-{% assign level = "introduction" %}
-{{ site.data.breadcrumb.[level].text }}
+{% assign level_ary = page.url | split: '/' %}
+
+<li><a href = "{{ site.data.breadcrumb.dbr_doc.url }}">{{ site.data.breadcrumb.dbr_doc.text }}</a></li>
+{% for cur_level in level_ary %}
+
+    {% if site.data.breadcrumb.[cur_level] %}
+        <li><a href = "{{ site.data.breadcrumb.[cur_level].url }}">{{ site.data.breadcrumb.[cur_level].text }}</a></li>
+    {% endif %}
+
+{% endfor %}

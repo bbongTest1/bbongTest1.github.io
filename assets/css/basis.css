@@ -235,3 +235,9 @@ ul.mainPage {
 	line-height: 14px;
 }
 
+.breadcrumb > li + li:before {
+    color: #CCCCCC;
+    content: "/ ";
+    padding: 0 5px;
+}
+
