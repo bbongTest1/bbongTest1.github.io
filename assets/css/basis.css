@@ -241,29 +241,29 @@ ul.mainPage {
 }
 
 #crumbs ul{
-	list-style: none;
+    list-style: none;
 }
 
 #crumbs ul li a{
 	float: left;
-	margin-right: 30px;
+	margin-right: 20px;
 	display: inline-block;
 	position: relative;
-	height: 30px;
+	height: 15px;
 	padding: 10px 20px 0 20px;
 	text-align: center;
 	background-color: #3498db;
 	color: #fff;
 	text-decoration: none; 
-	font-size: 20px;
+	font-size: 13px;
 	outline: none;
 }
 
 #crumbs ul li a:after{
 	content: "";
-    border-left: 20px solid #3498db;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
+    	border-left: 20px solid #3498db;
+    	border-top: 20px solid transparent;
+    	border-bottom: 20px solid transparent;
 	position: absolute;
 	right: -20px;
 	top: 0;
