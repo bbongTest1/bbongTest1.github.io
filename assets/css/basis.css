@@ -244,73 +244,10 @@ ul.mainPage {
     list-style: none;
 }
 
-#crumbs ul li a{
-	float: left;
-	margin-right: 20px;
-	display: inline-block;
-	position: relative;
-	height: 15px;
-	padding: 10px 20px 0 20px;
-	text-align: center;
-	background-color: #3498db;
-	color: #fff;
-	text-decoration: none; 
-	font-size: 13px;
-	outline: none;
-}
-
-#crumbs ul li a:after{
-	content: "";
-    	border-left: 20px solid #3498db;
-    	border-top: 20px solid transparent;
-    	border-bottom: 20px solid transparent;
-	position: absolute;
-	right: -20px;
-	top: 0;
-}
-
-#crumbs ul li a:before{
-	content: "";
-	border-top: 20px solid #3498db;
-	border-bottom: 20px solid #3498db; 
-	border-left: 20px solid transparent;
-	position: absolute;
-	top: 0;
-	left: -20px;
-}
-
-#crumbs ul li:first-child a{
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
-}
-
-#crumbs ul li:first-child a:before{
-	display: none;
-}
-
-#crumbs ul li:last-child a{
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-}
-
-#crumbs ul li:last-child a:after{
-	display: none;
-}
-
-#crumbs ul li a:hover{
-	background-color:#fa5ba5;
-}
-
-
-#crumbs ul li a:hover:after{
-	border-left-color: #fa5ba5;
-}
-
-
-
-#crumbs ul li a:hover:before{
-	border-top-color: #fa5ba5;
-	border-bottom-color: #fa5ba5;
+#crumbs > li + li:before {
+    color: #CCCCCC;
+    content: "/ ";
+    padding: 0 5px;
 }
 
 
