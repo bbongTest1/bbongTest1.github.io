@@ -245,7 +245,7 @@ ul.mainPage {
 }
 
 #crumb ul li {
-	display: inline;
+	float: left;
 }
 
 #crumbs ul > li + li:before {
