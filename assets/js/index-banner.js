@@ -73,8 +73,8 @@ function GenerateContentByHead() {
             curliContent += '</li>'
             appendContent += curliContent;
         }
-        if ($('#menuLsitContainer').length != 0) {
-            $($('#menuLsitContainer')[0]).prepend(appendContent);
+        if ($('#contentMenuList').length != 0) {
+            $($('#contentMenuList')[0]).prepend(appendContent);
         }
     }
 }
