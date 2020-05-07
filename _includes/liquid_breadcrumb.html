@@ -9,7 +9,20 @@
 
 {% endfor %}
 
-{% assign file_name =  level_ary | last |  split: '.' | last |  strip %}
-{% assign file_name_str = file_name | split:'-' | capitalize %}
-<li>{{ file_name_str }}</li>
+{% assign file_name =  level_ary | last |  split: '.' | first |  strip %}
+
+{% if file_name contains '-' %}
+    {% assign file_name_str = file_name | split:'-' %}
+    {% capture output_val %}
+        {% for cur_str in file_name_str %}
+            {{ cur_str | capitalize }}
+        {% endfor %}
+    {% endcapture %}
+    <li>{{ output_val }}</li>
+{% else %}
+    <li>{{ file_name_str | capitalize }}</li>
+{% endif %}
+
+
+
 
