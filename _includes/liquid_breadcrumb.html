@@ -8,3 +8,8 @@
     {% endif %}
 
 {% endfor %}
+
+{% assign file_name =  level_ary | last |  split: '.' | last |  strip %}
+{% file_name_str = file_name | split:'-' | capitalize %}
+<li>{{ file_name_str }}</li>
+
