@@ -24,11 +24,8 @@
             <div class="main">
                 <div class="sideMenu">
 					<ul class="disc">
-						<li><p>DBR_XXXXXXXXXXXXXXX</p></li>
-						<li><p>DBR_XXXXXXXXXXXXXXX</p></li>
-						<li><p>DBR_XXXXXXXXXXXXXXX</p></li>
-						<li><p>DBR_XXXXXXXXXXXXXXX</p></li>
-						<li><p>DBR_XXXXXXXXXXXXXXX</p></li>
+                        <ul class="disc" id="menuLsitContainer">
+                        </ul>
 					</ul>
                 </div>
                 <div class="content markdown-body headCounter">
@@ -65,9 +62,7 @@
     {%- if page.needCollapsedSideBar -%}
     <script>ListExpandCollapse();</script>
     {%- endif -%}
-    {%- if page.needAutoGenerateSidebar -%}
     <script>GenerateContentByHead();</script>
-    {%- endif -%}
 </body>
 
 </html>
