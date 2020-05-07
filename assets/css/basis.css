@@ -237,17 +237,21 @@ ul.mainPage {
 
 
 #crumbs{
-    position: relative;
+	position: relative;
 }
 
 #crumbs ul{
-    list-style: none;
+	list-style: none;
+}
+
+#crumb li {
+	float: left;
 }
 
 #crumbs ul > li + li:before {
-    color: #CCCCCC;
-    content: "/ ";
-    padding: 0 5px;
+	color: #CCCCCC;
+	content: "/ ";
+	padding: 0 5px;
 }
 
 
