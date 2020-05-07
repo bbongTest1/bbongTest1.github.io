@@ -64,17 +64,15 @@
 
 .wrapper .container .head { 
 	position: fixed; 
+	padding-top: 20px;
 	top: 0; 
 	width: calc(100% - 330x); 
-	height: 40px; 
-	color: #ffffff; 
-	background: #3196fc; 
-	line-height: 40px; 
+	height: 100px; 
 	padding: 0 20px; 
 }
 
 .wrapper .container .main { 	  
-	margin-top: 20px; 	
+	margin-top: 100px; 	
 	padding: 20px; 	
 }
 

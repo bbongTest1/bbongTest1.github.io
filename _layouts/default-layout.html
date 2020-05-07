@@ -14,6 +14,13 @@
             {%- include {{ page.sidebarListFile }}.html -%}
         </div>
         <div class="container">
+            <div class = "head">
+                <p align="left"><a href="https://www.dynamsoft.com/"><img src="{{ site.dynamsoft_logo }}"
+                    alt="Dynamsoft Logo" /></a></p>
+                <p align="right"><a href="{{ site.repositoryUrl }}{{ page.sourceCodeUrl }}"
+                    class="otherLinkColour">Edit<img src="{{ site.edit_icon }}" width="20px" height="15px" /></a>
+                </p>
+            </div>
             <div class="main">
                 <div class="sideMenu">
 					<ul class="disc">
@@ -23,13 +30,9 @@
 						<li><p>DBR_XXXXXXXXXXXXXXX</p></li>
 						<li><p>DBR_XXXXXXXXXXXXXXX</p></li>
 					</ul>
-				</div>
+                </div>
                 <div class="content markdown-body headCounter">
-                    <p align="left"><a href="https://www.dynamsoft.com/"><img src="{{ site.dynamsoft_logo }}"
-                                alt="Dynamsoft Logo" /></a></p>
-                    <p align="right"><a href="{{ site.repositoryUrl }}{{ page.sourceCodeUrl }}"
-                            class="otherLinkColour">Edit<img src="{{ site.edit_icon }}" width="20px" height="15px" /></a>
-                    </p>
+
                     <p>
                     <div id="crumbs">
                         <ul>
