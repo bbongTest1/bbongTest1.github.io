@@ -242,7 +242,8 @@ ul.mainPage {
 
 #crumbs ul{
 	list-style: none;
-	margin-left: 10px;
+	padding-inline-start: 0px;
+	margin-left: 0px;
 }
 
 #crumbs ul li {
