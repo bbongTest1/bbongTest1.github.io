@@ -79,11 +79,11 @@
 }
 
 .wrapper .container .main .content { 
-	padding-right: 80px; 
+	padding-right: 300px; 
 }
 
 .wrapper .container .main .sideMenu { 
-	width: 80px; 
+	width: 300px; 
 	position: fixed; 
 	right: 0; 
 }
