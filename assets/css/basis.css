@@ -244,7 +244,7 @@ ul.mainPage {
 	list-style: none;
 }
 
-#crumb ul li {
+#crumbs ul li {
 	display: inline-block;
 	float: left;
 }
