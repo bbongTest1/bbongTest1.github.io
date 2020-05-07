@@ -245,6 +245,7 @@ ul.mainPage {
 }
 
 #crumb ul li {
+	display: inline-block;
 	float: left;
 }
 
