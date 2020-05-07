@@ -244,7 +244,7 @@ ul.mainPage {
 	list-style: none;
 }
 
-#crumb li {
+#crumb ul li {
 	display:inline-block;
 }
 
