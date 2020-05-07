@@ -68,7 +68,7 @@
 	width: calc(100% - 330px); 
 	height: 100px; 
 	background-color: white;
-	padding: 300px 20px; 
+	padding-right: 300px; 
 }
 
 .wrapper .container .main { 	  
