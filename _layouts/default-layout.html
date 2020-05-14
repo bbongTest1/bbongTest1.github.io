@@ -42,8 +42,10 @@
                     </p>
 
                     {% assign var = 0 %}    
+                    
+                    {% if var > 0 %}
                     {% assign var = var | plus:1 %}
-                    {% assign var = var | plus:1 %}
+                    {% endif %}
 
                     {{- var -}}
                     {{- content -}}
