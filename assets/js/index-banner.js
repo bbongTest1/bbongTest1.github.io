@@ -94,7 +94,13 @@ function HighlightCurrentList() {
         if (curChildren.length > 0) {
             for (var j = 0, len1 = curChildren.length; j < len1; j++)
             {
-                if (curChildren[j].tagName.toLowerCase() != "ul")
+                if (curChildren[j].tagName.toLowerCase() != "a")
+                {
+                    if (URL.search(curChildren[j].href) != -1){
+                        curChildren[j].style.fontWeight = 'bold';
+                    }
+                }
+                else if (curChildren[j].tagName.toLowerCase() != "ul")
                 {
                     if(curChildren[j].getElementsByTagName("a").length > 0)
                     {
