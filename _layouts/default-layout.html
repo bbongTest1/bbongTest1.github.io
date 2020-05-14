@@ -41,9 +41,11 @@
                          </ul>
                     </p>
                     {% assign var = 0 %}
+                        
                     {% for  i in (i..5) %}
-                        {% assign var = var | puls: 1 %}
+                        {% assign var = i | puls: 1 %}
                     {% endfor %}
+
                     {{- var -}}
                     {{- content -}}
                     <hr />
