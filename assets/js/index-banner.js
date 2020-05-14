@@ -77,30 +77,31 @@ function GenerateContentByHead() {
             $($('#contentMenuList')[0]).prepend(appendContent);
         }
     }
+}
 
-    function HighlightCurrentList() {
-        var navWrap = document.getElementById("disc");
-        var nav1s = navWrap.getElementsByTagName("li");
-        var URL = document.URL;
-        var end = URL.indexOf("#")
-        if (end != -1)
-        {
-            URL = URL.slice(0, end);
-        }
-        var isfound = false;
-        for (var i = 0, len = nav1s.length; i < len; i++) {
-            var curChildren = nav1s[i].children;
-            if (curChildren.length > 0) {
-                for (var j = 0, len1 = curChildren.length; j < len1; j++)
+function HighlightCurrentList() {
+    var navWrap = document.getElementById("disc");
+    var nav1s = navWrap.getElementsByTagName("li");
+    var URL = document.URL;
+    var end = URL.indexOf("#")
+    if (end != -1)
+    {
+        URL = URL.slice(0, end);
+    }
+    var isfound = false;
+    for (var i = 0, len = nav1s.length; i < len; i++) {
+        var curChildren = nav1s[i].children;
+        if (curChildren.length > 0) {
+            for (var j = 0, len1 = curChildren.length; j < len1; j++)
+            {
+                if (curChildren[j].tagName.toLowerCase() == "a")
                 {
-                    if (curChildren[j].tagName.toLowerCase() == "a")
-                    {
-                        if (URL.search(curChildren[j].href) != -1){
-                            curChildren[j].style.fontWeight = 'bold';
-                        }
+                    if (URL.search(curChildren[j].href) != -1){
+                        curChildren[j].style.fontWeight = 'bold';
                     }
                 }
             }
         }
     }
 }
+
