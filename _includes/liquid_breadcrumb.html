@@ -2,13 +2,17 @@
 {% assign level_ary = page.url | split: '/' %}
 
 <li><a href = "{{ site.data.breadcrumb.dbr_doc.url }}">{{ site.data.breadcrumb.dbr_doc.text }}</a></li>
+{% assign bottomListFileName = "" %}
 {% for cur_level in level_ary %}
 
     {% if site.data.breadcrumb.[cur_level] %}
         <li><a href = "{{ site.data.breadcrumb.[cur_level].url }}">{{ site.data.breadcrumb.[cur_level].text }}</a></li>
+        {% assign bottomListFileName = ite.data.breadcrumb.[cur_level].text %}
     {% endif %}
 
 {% endfor %}
+
+
 
 {% if page.url contains '.html' %}
     {% assign file_name =  level_ary | last |  split: '.' | first |  strip %}
@@ -25,6 +29,9 @@
         <li>{{ file_name }}</li>
     {% endif %}
 {% endif %}
+
+
+{{ bottomListFileName }}
 
 
 
