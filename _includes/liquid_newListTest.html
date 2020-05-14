@@ -9,7 +9,9 @@
     {%- endif -%}
 {%- endfor -%}
 
+{%- if page.sidebarListFile -%}
 {%- include {{- page.sidebarListFile -}}.html -%}
+{%- endif -%}
 
 {% if validCount > 0 %}
 {%- for i in (1..validCount) -%}
