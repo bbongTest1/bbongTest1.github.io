@@ -80,7 +80,7 @@ function GenerateContentByHead() {
 }
 
 function HighlightCurrentList() {
-    var navWrap = document.getElementById("disc");
+    var navWrap = document.getElementsByClassName("disc");
     var nav1s = navWrap.getElementsByTagName("li");
     var URL = document.URL;
     var end = URL.indexOf("#")
