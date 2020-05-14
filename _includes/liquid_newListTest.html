@@ -1,18 +1,14 @@
 <ul class="mainPage" id="menuLsitContainer" name="listLevel1">
-    <li><a href = "{{ site.docHomePage }}" class="otherLinkColour">Homepage</a>
+    <li><a href = "{{ site.docHomePage }}" class="otherLinkColour">Homepage</a></li>
 {%- assign level_ary = page.url | split: '/' -%}
 {%- assign validCount = 0 -%}
 {%- for cur_level in level_ary -%}
     {%- if site.data.breadcrumb.[cur_level] -%}
-        <ul>
-            <li><a href = "{{ site.data.breadcrumb.[cur_level].url }}">{{ site.data.breadcrumb.[cur_level].text }}</a>
+        <li><a href = "{{ site.data.breadcrumb.[cur_level].url }}">{{ site.data.breadcrumb.[cur_level].text }}</a></li>
         {%- assign validCount = validCount | plus:1 -%}
         {%- assign bottomListFileName = site.data.breadcrumb.[cur_level].text -%}
     {%- endif -%}
 {%- endfor -%}
 {%- include {{ page.sidebarListFile }}.html -%}
 
-
-
-</li>
 </ul>
