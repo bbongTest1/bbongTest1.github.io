@@ -42,10 +42,8 @@
                     </p>
 
                     {% assign var = 0 %}    
-                    {% for i in (1..5) %}
-                        {% assign var2 = var | puls: 1 %}
-                        {% assign var = var2 %}
-                    {% endfor %}
+                    {% assign var = var | plus:1 %}
+                    {% assign var = var | plus:1 %}
 
                     {{- var -}}
                     {{- content -}}
