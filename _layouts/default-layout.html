@@ -40,9 +40,10 @@
                             {%- include liquid_autoGenerateHistoryList.html -%}
                          </ul>
                     </p>
-                    {% increment var %}
-                    {% increment var %}
-                    {% increment var %}
+                    {% assign var = 0 %}
+                    {% for  i in (i..5) %}
+                        {% assign var = var | puls: 1 %}
+                    {% endfor %}
                     {{- var -}}
                     {{- content -}}
                     <hr />
