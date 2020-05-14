@@ -1,18 +1,18 @@
 <ul class="mainPage" name="listLevel1">
-    <li><a href = "{{ site.docHomePage }}" class="otherLinkColour">Homepage</a></li>
+    <li><a href = "{{ site.docHomePage }}" class="otherLinkColour">Homepage</a>
 {%- assign level_ary = page.url | split: '/' -%}
 {%- assign validCount = 0 -%}
 {%- for cur_level in level_ary -%}
     {%- if site.data.breadcrumb.[cur_level] -%}
-        <li><a href = "{{ site.data.breadcrumb.[cur_level].url }}">{{ site.data.breadcrumb.[cur_level].text }}</a></li>
+        <ul><li><a href = "{{ site.data.breadcrumb.[cur_level].url }}">{{ site.data.breadcrumb.[cur_level].text }}</a>
         {%- assign validCount = validCount | plus:1 -%}
     {%- endif -%}
 {%- endfor -%}
 
 {% if validCount > 0 %}
-{%- for i in (1...validCount) -%}
-        <li>{{ i }}</li>
+{%- for i in (1..validCount) -%}
+</li></ul>
 {%- endfor -%}
 {%- endif -%}
-
+</li>
 </ul>
