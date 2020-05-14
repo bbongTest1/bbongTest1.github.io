@@ -8,8 +8,7 @@
 {%- for cur_level in level_ary -%}
 
     {%- if site.data.breadcrumb.[cur_level] -%}
-    <ul>
-        <li><a href = "{{ site.data.breadcrumb.[cur_level].url }}">{{ site.data.breadcrumb.[cur_level].text }}</a>
+        <li><a href = "{{ site.data.breadcrumb.[cur_level].url }}">{{ site.data.breadcrumb.[cur_level].text }}</a><li>
         {%- assign validCount = validCount | plus:1 -%}
         {%- assign bottomListFileName = site.data.breadcrumb.[cur_level].text -%}
     {%- endif -%}
@@ -17,9 +16,6 @@
 
 {%- include {{ page.sidebarListFile }}.html -%}
 
-{%- for i in (1...validCount) -%}
-    </li>
-</ul>
-{%- endfor -%}
+
 </li>
 </ul>
