@@ -2,7 +2,6 @@
 {% assign level_ary = page.url | split: '/' %}
 
 <li><a href = "{{ site.data.breadcrumb.dbr_doc.url }}">{{ site.data.breadcrumb.dbr_doc.text }}</a></li>
-{% assign bottomListFileName = "" %}
 {% for cur_level in level_ary %}
 
     {% if site.data.breadcrumb.[cur_level] %}
@@ -29,10 +28,6 @@
         <li>{{ file_name }}</li>
     {% endif %}
 {% endif %}
-
-
-{{ bottomListFileName }}
-
 
 
 
