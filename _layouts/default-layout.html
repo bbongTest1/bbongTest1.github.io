@@ -60,7 +60,10 @@
     {%- if page.needCollapsedSideBar -%}
     <script>ListExpandCollapse();</script>
     {%- endif -%}
-    <script>GenerateContentByHead();</script>
+    <script>
+        GenerateContentByHead();
+        HighlightCurrentList();
+    </script>
 </body>
 
 </html>
