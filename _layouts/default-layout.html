@@ -11,7 +11,7 @@
                         href="https://www.dynamsoft.com/Products/Dynamic-Barcode-Reader.aspx"
                         class="sideProductPage">Dynamsoft Barcode Reader</a></p>
             </div>
-            {%- include {{ page.sidebarListFile }}.html -%}
+            {%- include liquid_newListTest.html -%}
         </div>
         <div class="container">
             <div class = "head">
@@ -41,13 +41,6 @@
                          </ul>
                     </p>
 
-                    {% assign var = 0 %}    
-                    
-                    {% if var > 0 %}
-                    {% assign var = var | plus:1 %}
-                    {% endif %}
-
-                    {{- var -}}
                     {{- content -}}
                     <hr />
                     <div class="footer">
