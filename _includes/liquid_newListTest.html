@@ -12,10 +12,12 @@
 {%- endfor -%}
 {%- include {{ page.sidebarListFile }}.html -%}
 
+{% if validCount > 0 %}
 {%- for i in (1...validCount) -%}
             </li>
             </ul>
 {%- endfor -%}
+{%- endif -%}
 
 </li>
 </ul>
