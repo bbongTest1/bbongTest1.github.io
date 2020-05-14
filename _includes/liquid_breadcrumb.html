@@ -7,7 +7,7 @@
 
     {% if site.data.breadcrumb.[cur_level] %}
         <li><a href = "{{ site.data.breadcrumb.[cur_level].url }}">{{ site.data.breadcrumb.[cur_level].text }}</a></li>
-        {% assign bottomListFileName = ite.data.breadcrumb.[cur_level].text %}
+        {% assign bottomListFileName = site.data.breadcrumb.[cur_level].text %}
     {% endif %}
 
 {% endfor %}
