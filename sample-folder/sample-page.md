@@ -4,6 +4,7 @@ title: Sample Page
 keywords: sample, page
 description: sample page
 needAutoGenerateSidebar: true
+needGenerateH3Content: true
 ---
 
 # Sample Page
