@@ -1,4 +1,4 @@
-Some configuration files you may need to change:
+The following are some configuration files you may need to change:
 
 - [_config.yml](_config.yml)
 - [_layouts/default-layout.html](_layouts/default-layout.html)
