@@ -1,5 +1,9 @@
 {%- assign level_ary = page.url | split: '/' -%}
+
+<!-- Repalce with your product site -->
 <li><a class="bluelink" href = "https://www.dynamsoft.com/Products/Dynamic-Barcode-Reader.aspx">Dynamsoft Barcode Reader</a></li>
+<!-- Repalce with your product site -->
+
 <li><a class="bluelink" href = "{{ site.programming }}">Documentation</a></li>
 {%- for cur_level in level_ary -%}
     {%- assign breadcrumbUrl = page.url | split: cur_level | first | strip -%}
