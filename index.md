@@ -1,9 +1,14 @@
 ---
 layout: home-page
-title: Dynamsoft Barcode Reader SDK Documentation
-keywords: dynamsoft barcode reader, dbr, documentation
+title: Documentation Homepage
+keywords: homepage, documentation
 breadcrumbText: HomePage
-description: Dynamsoft Barcode Reader SDK Documentation Homepage
+description: Documentation Homepage
 ---
 
 
+# Documentation HomePage
+
+- [Sample Folder Index Page](sample-folder/)
+    - [Sample Page](sample-folder/test-page.md)
+    - [Sample Subfolder](sample-folder/sample-subfolder/)
