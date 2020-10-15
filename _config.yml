@@ -1,0 +1,16 @@
+repositoryUrl: https://github.com/bbongTest1/bbongTest1.github.io/blob/master
+docFullPath: https://www.dynamsoft.com/barcode-reader
+docHomePage: /barcode-reader
+
+
+assets: /barcode-reader/assets/
+edit_icon: /barcode-reader/assets/img-icon/edit-icon.png
+smile_icon: /barcode-reader/assets/img-icon/icon-smile.png
+sad_icon: /barcode-reader/assets/img-icon/icon-sad.png
+dbr_icon: /barcode-reader/assets/img-icon/icon-dbr.svg
+dwt_icon: /barcode-reader/assets/img-icon/icon-dwt.svg
+dnt_icon: /barcode-reader/assets/img-icon/icon-dnt.svg
+
+baseurl: "/barcode-reader"
+plugins:
+  - jemoji
