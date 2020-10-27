@@ -279,7 +279,7 @@ function UsefulRecord(isUseful) {
 function UrlReplace()
 {
     var curRelativeUrl = (document.URL.split(document.domain)).pop();
-    var allHref = $(".content")[0].find("href");
+ 
 
     var tmpExp = new RegExp(/-v[0-9]+.*\//g)
     var searchAry = tmpExp.exex(curRelativeUrl);
@@ -288,11 +288,14 @@ function UrlReplace()
         var needFindStr = curRelativeUrl.split(searchAry[0])[0] + "/";
         var needReplaceStr = curRelativeUrl.split(searchAry[0])[0];
 
-        var allHref = $(".content")[0].find("[href]");
+        var allHref = $(".content")[0].find("a");
     
         for (var i = 0; i < allHref.length; i++)
         {
-            
+            if (allHre[i].href.serach(needFindStr) > 0)
+            {
+                allHre[i].href = allHre[i].href.replace(needFindStr, needReplaceStr);
+            }
         }
     }
 }
