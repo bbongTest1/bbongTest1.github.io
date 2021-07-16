@@ -1,9 +1,7 @@
 <li>
     <a href="{{ site.introduction }}" class="otherLinkColour">Introduction</a>
     <ul>
-        {%- if page.url contains '/introduction/' or page.url contains '/introduction-v' -%}
         <li><a href="{{ site.introduction }}" class="otherLinkColour">Overview</a></li>
         <li><a href="{{ site.introduction-license }}license.html" class="otherLinkColour">License</a></li>
-        {%- endif -%}
     </ul>
 </li>
