@@ -34,62 +34,77 @@ function GenerateContentByHead(needh3 = true) {
 }
 
 function FullTreeMenuList(generateDocHead, needh3 = true, pageStartVer = undefined) {
-    var navWrap = document.getElementById("fullTreeMenuListContainer");
-    if (navWrap != null) {
-        HighlightCurrentListForFullTree("fullTreeMenuListContainer", true, document.URL, pageStartVer);
-        if (generateDocHead) {
-            GenerateContentByHead(needh3);
-            //GenerateContentByHead(false);
-        }
+    var version_tree_list = null
+    var curPageVersion = $('.currentVersion').text()
+    curPageVersion = curPageVersion =='latest version' ? 'latest_version' : curPageVersion.split(' ')[1]
+    var versionListInterval = setInterval(function() {
+        version_tree_list = $('#sideBarIframe').contents().find('#version_tree_list span')
+        if (version_tree_list && curPageVersion) {
+            for(var i = 0; i<version_tree_list.length; i++) {
+                console.log($(version_tree_list[i]).attr('id'), 'version_tree_' + curPageVersion)
+                if ($(version_tree_list[i]).attr('id') == 'version_tree_' + curPageVersion) {
+                    $('#fullTreeMenuListContainer').html($(version_tree_list[i]).html())
+                }
+            }
+            clearInterval(versionListInterval)
+            var navWrap = document.getElementById("fullTreeMenuListContainer");
+            if (navWrap != null) {
+                HighlightCurrentListForFullTree("fullTreeMenuListContainer", true, document.URL, pageStartVer);
+                if (generateDocHead) {
+                    GenerateContentByHead(needh3);
+                    //GenerateContentByHead(false);
+                }
 
-        navWrap = document.getElementById("fullTreeMenuListContainer");
-        var liAry = navWrap.getElementsByTagName("li");
+                navWrap = document.getElementById("fullTreeMenuListContainer");
+                var liAry = navWrap.getElementsByTagName("li");
 
-        for (var i = 0, len = liAry.length; i < len; i++) {
-            liAry[i].onclick = (function (i) {
-                return function (event) {
-                    if ($(liAry[i]).children("a").length == 0 || $(liAry[i]).children("a")[0].getAttribute("href") == null) {
-                        var subUl = $(liAry[i]).children("ul");
-                        if (subUl.length > 0) {
-                            for (var j = 0; j < subUl.length; j++) {
-                                if (subUl[j].style.display == "block") {
-                                    var parentL = $(subUl[j]).parents("li");
-                                    if (parentL.length > 0) {
-                                        parentL[0].className = "collapseListStyle"
-                                        // parentL[0].style.listStyleImage = "url('/assets/img-icon/collapse-list.png')";
-                                    }
-                                    subUl[j].style.display = "none";
-                                }
-                                else {
-                                    subUl[j].style.display = "block";
-                                    var parentL = $(subUl[j]).parents("li");
-                                    if (parentL.length > 0) {
-                                        parentL[0].className = "expandListStyle"
-                                        // parentL[0].style.listStyleImage = "url('/assets/img-icon/expand-list.png')";
-                                    }
-                                    var parentUl = $(liAry[i]).parents("ul");
-                                    for (var m = 0; m < parentUl.length; m++) {
-                                        if (parentUl[m].style.display != "block") {
-                                            var parentL = $(parentUl[m]).parents("li");
+                for (var i = 0, len = liAry.length; i < len; i++) {
+                    liAry[i].onclick = (function (i) {
+                        return function (event) {
+                            if ($(liAry[i]).children("a").length == 0 || $(liAry[i]).children("a")[0].getAttribute("href") == null) {
+                                var subUl = $(liAry[i]).children("ul");
+                                if (subUl.length > 0) {
+                                    for (var j = 0; j < subUl.length; j++) {
+                                        if (subUl[j].style.display == "block") {
+                                            var parentL = $(subUl[j]).parents("li");
+                                            if (parentL.length > 0) {
+                                                parentL[0].className = "collapseListStyle"
+                                                // parentL[0].style.listStyleImage = "url('/assets/img-icon/collapse-list.png')";
+                                            }
+                                            subUl[j].style.display = "none";
+                                        }
+                                        else {
+                                            subUl[j].style.display = "block";
+                                            var parentL = $(subUl[j]).parents("li");
                                             if (parentL.length > 0) {
                                                 parentL[0].className = "expandListStyle"
                                                 // parentL[0].style.listStyleImage = "url('/assets/img-icon/expand-list.png')";
                                             }
-                                            parentUl[m].style.display = "block";
+                                            var parentUl = $(liAry[i]).parents("ul");
+                                            for (var m = 0; m < parentUl.length; m++) {
+                                                if (parentUl[m].style.display != "block") {
+                                                    var parentL = $(parentUl[m]).parents("li");
+                                                    if (parentL.length > 0) {
+                                                        parentL[0].className = "expandListStyle"
+                                                        // parentL[0].style.listStyleImage = "url('/assets/img-icon/expand-list.png')";
+                                                    }
+                                                    parentUl[m].style.display = "block";
+                                                }
+                                            }
                                         }
                                     }
                                 }
                             }
+                            else {
+                                //HighlightCurrentListForFullTree("fullTreeMenuListContainer", false, ($(liAry[i]).children("a"))[0].href);
+                            }
+                            event.stopPropagation();
                         }
-                    }
-                    else {
-                        //HighlightCurrentListForFullTree("fullTreeMenuListContainer", false, ($(liAry[i]).children("a"))[0].href);
-                    }
-                    event.stopPropagation();
+                    })(i)
                 }
-            })(i)
+            }
         }
-    }
+    }, 100)
 }
 
 function HighlightCurrentListForFullTree(searchListId, firstTime, searchUrl = document.URL, pageStartVer = undefined) {
