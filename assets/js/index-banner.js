@@ -35,7 +35,7 @@ function GenerateContentByHead(needh3 = true) {
 
 function FullTreeMenuList(generateDocHead, needh3 = true, pageStartVer = undefined) {
     var version_tree_list = null
-    var curPageVersion = getUrlVars(docUrl)["ver"];
+    var curPageVersion = getUrlVars(document.URL)["ver"];
     curPageVersion = curPageVersion == 'latest' || curPageVersion == null ? 'latest_version' : curPageVersion
     var versionListInterval = setInterval(function() {
         version_tree_list = $('#sideBarIframe').contents().find('#version_tree_list span')
@@ -48,7 +48,7 @@ function FullTreeMenuList(generateDocHead, needh3 = true, pageStartVer = undefin
             }
 
             var allHerf1 = $(".docContainer .content, #docHead, #AutoGenerateSidebar, .sideBar").find("a");
-            var ver = getUrlVars(docUrl)["ver"];
+            var ver = getUrlVars(document.URL)["ver"];
             for (var i = 0; i < allHerf1.length; i++)
             {
                 allHerf1[i].onclick = function(){addParam(this, ver); return false;};
