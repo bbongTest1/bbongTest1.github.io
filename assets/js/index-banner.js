@@ -155,7 +155,7 @@ function HighlightCurrentListForFullTree(searchListId, firstTime, searchUrl = do
             
             if (!findExactPage) {
                 var ver = getUrlVars(document.URL)["ver"];
-                if (ver != undefined && ver != "latest" && pageStartVer != undefined && pageStartVer > ver) {
+                if (ver != undefined && ver != "latest" && pageStartVer != undefined && pageStartVer != "" && pageStartVer > ver) {
                     addParam(curListATag[0], ver);
                 }
             }
