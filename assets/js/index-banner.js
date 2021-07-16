@@ -33,10 +33,10 @@ function GenerateContentByHead(needh3 = true) {
     }
 }
 
-function FullTreeMenuList(generateDocHead, needh3 = true) {
+function FullTreeMenuList(generateDocHead, needh3 = true, pageStartVer = undefined) {
     var navWrap = document.getElementById("fullTreeMenuListContainer");
     if (navWrap != null) {
-        HighlightCurrentListForFullTree("fullTreeMenuListContainer", true, document.URL, generateDocHead);
+        HighlightCurrentListForFullTree("fullTreeMenuListContainer", true, document.URL, pageStartVer);
         if (generateDocHead) {
             GenerateContentByHead(needh3);
             //GenerateContentByHead(false);
@@ -92,7 +92,7 @@ function FullTreeMenuList(generateDocHead, needh3 = true) {
     }
 }
 
-function HighlightCurrentListForFullTree(searchListId, firstTime, searchUrl = document.URL, needGenerateDocHead = false) {
+function HighlightCurrentListForFullTree(searchListId, firstTime, searchUrl = document.URL, pageStartVer = undefined) {
     var navWrap = document.getElementById(searchListId);
     if (navWrap != null) {
         var listAry = navWrap.getElementsByTagName("li");    
@@ -124,8 +124,8 @@ function HighlightCurrentListForFullTree(searchListId, firstTime, searchUrl = do
         if (searchUrl.indexOf("/#") != -1) {
             searchUrl = searchUrl.substring(0, searchUrl.indexOf("/#") + 1 );
         }
-        var foundCurList = false;
         var bestMatchList = -1;
+        var findExactPage = false;
 
         for (var i = 0, len = listAry.length; i < len; i++) {
             var curLi = listAry[i];
@@ -133,6 +133,7 @@ function HighlightCurrentListForFullTree(searchListId, firstTime, searchUrl = do
             if (curListATag.length > 0 && curListATag[0].getAttribute("href") != null) {
                 var returnVal = UrlSearch(searchUrl, curListATag[0].href);
                 if (returnVal == 1) {
+                    findExactPage = true;
                     bestMatchList = i;
                     break;               
                 }
@@ -151,8 +152,14 @@ function HighlightCurrentListForFullTree(searchListId, firstTime, searchUrl = do
         if (bestMatchList != -1) {
             var curLi = listAry[bestMatchList];
             var curListATag =  $(curLi).children("a");
-
-            foundCurList = true;
+            
+            if (!findExactPage) {
+                var ver = getUrlVars(docUrl)["ver"];
+                if (ver != undefined && ver != "latest" && pageStartVer != undefined && pageStartVer > ver) {
+                    addParam(curListATag[0], ver);
+                }
+            }
+        
             curListATag[0].style.color = '#fe8e14';
             curListATag[0].className = "otherLinkColour activeLink"
 
@@ -234,7 +241,6 @@ function HighlightCurrentListForFullTree(searchListId, firstTime, searchUrl = do
         }
     }
 }
-
 
 function UrlSearch(docUrl, listUrl) {
     docUrl = docUrl.toLowerCase();

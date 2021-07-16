@@ -41,7 +41,7 @@ function UrlReplace()
         if(compatiableDiv != null){
             
         }
-        if (compatiableDiv != null && compatibleTag != null && curVerFromUrl != "latest"){
+        if (compatiableDiv != null && compatibleTag != null){
             compatiableDiv.style.display = "block";
             compatibleTag[0].innerText = "Version "+ver;
         }
