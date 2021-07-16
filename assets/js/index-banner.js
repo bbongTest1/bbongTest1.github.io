@@ -50,11 +50,11 @@ function FullTreeMenuList(generateDocHead, needh3 = true, pageStartVer = undefin
                 }
             }
             
-            SearchVersion();
+            var curPageRealVer = SearchVersion();
 
             var navWrap = document.getElementById("fullTreeMenuListContainer");
             if (navWrap != null) {
-                HighlightCurrentListForFullTree("fullTreeMenuListContainer", true, document.URL, pageStartVer);
+                HighlightCurrentListForFullTree("fullTreeMenuListContainer", true, document.URL, pageStartVer, curPageRealVer);
                 if (generateDocHead) {
                     GenerateContentByHead(needh3);
                     //GenerateContentByHead(false);
@@ -167,9 +167,11 @@ function SearchVersion() {
     {
         allHerf1[i].onclick = function(){addParam(this, ver); return false;};
     }
+
+    return curVerFromUrl;
 }
 
-function HighlightCurrentListForFullTree(searchListId, firstTime, searchUrl = document.URL, pageStartVer = undefined) {
+function HighlightCurrentListForFullTree(searchListId, firstTime, searchUrl = document.URL, pageStartVer = undefined, curPageRealVer = undefined) {
     var navWrap = document.getElementById(searchListId);
     if (navWrap != null) {
         var listAry = navWrap.getElementsByTagName("li");    
@@ -232,7 +234,10 @@ function HighlightCurrentListForFullTree(searchListId, firstTime, searchUrl = do
             
             if (!findExactPage) {
                 var ver = getUrlVars(document.URL)["ver"];
-                if (ver != undefined && ver != "latest" && pageStartVer != undefined && pageStartVer != "" && pageStartVer > ver) {
+                if (ver != undefined &&
+                    ((ver != "latest" && pageStartVer != undefined && pageStartVer != "" && pageStartVer > ver) 
+                    || (curPageRealVer != undefined && curPageRealVer != "" && ((ver == "latest" && ver != curPageRealVer) || (ver != "latest" && ver > curPageRealVer)))
+                    )) {
                     addParam(curListATag[0], ver);
                 }
             }
