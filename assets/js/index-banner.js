@@ -42,7 +42,7 @@ function FullTreeMenuList(generateDocHead, needh3 = true, pageStartVer = undefin
     var versionListInterval = setInterval(function() {
         version_tree_list = $('#sideBarIframe').contents().find('#version_tree_list span')
         console.log(version_tree_list, curPageVersion)
-        if (version_tree_list && curPageVersion) {
+        if (version_tree_list && version_tree_list.length > 0  && curPageVersion) {
             for(var i = 0; i<version_tree_list.length; i++) {
                 console.log($(version_tree_list[i]).attr('id'), 'version_tree_' + curPageVersion)
                 if ($(version_tree_list[i]).attr('id') == 'version_tree_' + curPageVersion) {
