@@ -1,57 +1,57 @@
 repositoryUrl: https://github.com/Dynamsoft/camera-enhancer-docs/blob/master
 repository: Dynamsoft/camera-enhancer-docs
-docFullPath: https://www.dynamsoft.com/camera-enhancer/docs
-firstLevelUrl: /camera-enhancer/docs/
-docHomePage: /camera-enhancer/docs/introduction/
+docFullPath: https://www.dynamsoft.com
+firstLevelUrl: /
+docHomePage: /introduction/
 
 productUrl: https://www.dynamsoft.com/camera-enhancer/overview/
 productName: Dynamsoft Camera Enhancer
 
-introduction: /camera-enhancer/docs/introduction/
-programming: /camera-enhancer/docs/programming/
-parameters: /camera-enhancer/docs/parameters/
-trouble-shooting: /camera-enhancer/docs/trouble-shooting/
+introduction: /introduction/
+programming: /programming/
+parameters: /parameters/
+trouble-shooting: /trouble-shooting/
 
-ios: /camera-enhancer/docs/programming/ios/
-ios-guide: /camera-enhancer/docs/programming/ios/guide/
-ios-api: /camera-enhancer/docs/programming/ios/primary-api/
-ios-api-auxiliary: /camera-enhancer/docs/programming/ios/auxiliary-api/
-ios-release-note: /camera-enhancer/docs/programming/ios/release-note/
-ios-cameraenhancer: /camera-enhancer/docs/programming/ios/api/cameraenhancer/
+ios: /programming/ios/
+ios-guide: /programming/ios/guide/
+ios-api: /programming/ios/primary-api/
+ios-api-auxiliary: /programming/ios/auxiliary-api/
+ios-release-note: /programming/ios/release-note/
+ios-cameraenhancer: /programming/ios/api/cameraenhancer/
 
-introduction-license: /camera-enhancer/docs/introduction/license/
+introduction-license: /introduction/license/
 
-android: /camera-enhancer/docs/programming/android/
-android-guide: /camera-enhancer/docs/programming/android/guide/
-android-api: /camera-enhancer/docs/programming/android/primary-api/
-android-api-auxiliary: /camera-enhancer/docs/programming/android/auxiliary-api/
-android-release-note: /camera-enhancer/docs/programming/android/release-note/
-android-cameraenhancer: /camera-enhancer/docs/programming/android/primary-api/cameraenhancer/
+android: /programming/android/
+android-guide: /programming/android/guide/
+android-api: /programming/android/primary-api/
+android-api-auxiliary: /programming/android/auxiliary-api/
+android-release-note: /programming/android/release-note/
+android-cameraenhancer: /programming/android/primary-api/cameraenhancer/
 
-reference: /camera-enhancer/docs/parameters/reference/
-enumerations: /camera-enhancer/docs/parameters/enumerations/
+reference: /parameters/reference/
+enumerations: /parameters/enumerations/
 
-trouble-shooting: /camera-enhancer/docs/trouble-shooting/
-license-error: /camera-enhancer/docs/trouble-shooting/license-error/
-contact-us: /camera-enhancer/docs/trouble-shooting/contact-us/
-gallery: /camera-enhancer/docs/resources/code-gallery/
-all-release-note: /camera-enhancer/docs/resources/release-notes/
-resource: /camera-enhancer/docs/resources/
+trouble-shooting: /trouble-shooting/
+license-error: /trouble-shooting/license-error/
+contact-us: /trouble-shooting/contact-us/
+gallery: /resources/code-gallery/
+all-release-note: /resources/release-notes/
+resource: /resources/
 
 barcode-deploy-ios: /barcode-reader/programming/ios/api-reference/camera-enhancer/
 barcode-deploy-android: /barcode-reader/programming/android/api-reference/camera-enhancer/
 
-assets: /camera-enhancer/docs/assets/
-edit_icon: /camera-enhancer/docs/assets/img-icon/edit-icon.png
-smile_icon: /camera-enhancer/docs/assets/img-icon/icon-smile.png
-sad_icon: /camera-enhancer/docs/assets/img-icon/icon-sad.png
-dbr_icon: /camera-enhancer/docs/assets/img-icon/icon-dbr.svg
-dwt_icon: /camera-enhancer/docs/assets/img-icon/icon-dwt.svg
-dnt_icon: /camera-enhancer/docs/assets/img-icon/icon-dnt.svg
+assets: /assets/
+edit_icon: /assets/img-icon/edit-icon.png
+smile_icon: /assets/img-icon/icon-smile.png
+sad_icon: /assets/img-icon/icon-sad.png
+dbr_icon: /assets/img-icon/icon-dbr.svg
+dwt_icon: /assets/img-icon/icon-dwt.svg
+dnt_icon: /assets/img-icon/icon-dnt.svg
 
 overview: /camera-enhancer/overview/
 download: /camera-enhancer/downloads/1000021-confirmation/
 
-baseurl: "/camera-enhancer/docs/"
+baseurl: "/"
 plugins:
   - jemoji
