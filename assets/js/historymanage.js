@@ -52,13 +52,7 @@ function UrlReplace()
     else if (compatiableDiv != null){
         compatiableDiv.style.display = "none";
     }
-    
 
-    var allHerf1 = $(".docContainer .content, #docHead, #AutoGenerateSidebar, .sideBar").find("a");
-    for (var i = 0; i < allHerf1.length; i++)
-    {
-        allHerf1[i].onclick = function(){addParam(this, ver); return false;};
-    }
 }
 
 function allHerfClick(_this, ver) {
