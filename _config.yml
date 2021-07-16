@@ -1,44 +1,57 @@
-# replace the <full url of the public repository> with your repository url.
-# repositoryUrl: <full url of the public repository>/blob/master
-repositoryUrl: https://github.com/bbongTest1/bbongTest1.github.io/blob/master
+repositoryUrl: https://github.com/Dynamsoft/camera-enhancer-docs/blob/master
+repository: Dynamsoft/camera-enhancer-docs
+docFullPath: https://www.dynamsoft.com/camera-enhancer/docs
+firstLevelUrl: /camera-enhancer/docs/
+docHomePage: /camera-enhancer/docs/introduction/
 
+productUrl: https://www.dynamsoft.com/camera-enhancer/overview/
+productName: Dynamsoft Camera Enhancer
 
-# Full url of the publicshed site without last '/'.
-# For example: the full url of dbr doc sit is https://www.dynamsoft.com/barcode-reader/
-# then set docFullPath with https://www.dynamsoft.com/barcode-reader
-# docFullPath: <full url of the published site> (eg - https://www.dynamsoft.com/barcode-reader)
-docFullPat: https://bbongtest1.github.io/
+introduction: /camera-enhancer/docs/introduction/
+programming: /camera-enhancer/docs/programming/
+parameters: /camera-enhancer/docs/parameters/
+trouble-shooting: /camera-enhancer/docs/trouble-shooting/
 
-# Relative path to first-level domain name without last '/'.
-# For example: the full url of dbr doc sit is https://www.dynamsoft.com/barcode-reader/
-# then set docHomePage with /barcode-reader
-# docHomePage: #<relative path to first-level domain> (eg - /barcode-reader)
-docHomePage: /
+ios: /camera-enhancer/docs/programming/ios/
+ios-guide: /camera-enhancer/docs/programming/ios/guide/
+ios-api: /camera-enhancer/docs/programming/ios/primary-api/
+ios-api-auxiliary: /camera-enhancer/docs/programming/ios/auxiliary-api/
+ios-release-note: /camera-enhancer/docs/programming/ios/release-note/
+ios-cameraenhancer: /camera-enhancer/docs/programming/ios/api/cameraenhancer/
 
-# Notice the root of the path is the first-level domain, so the relative path shall be started 
-# with the first-level path rather than the root path of the repository.
+introduction-license: /camera-enhancer/docs/introduction/license/
 
-# Example variable:
-# sampleFolder: <docHomePage path>/sample-folder/
-sampleFolder: /sample-folder/
+android: /camera-enhancer/docs/programming/android/
+android-guide: /camera-enhancer/docs/programming/android/guide/
+android-api: /camera-enhancer/docs/programming/android/primary-api/
+android-api-auxiliary: /camera-enhancer/docs/programming/android/auxiliary-api/
+android-release-note: /camera-enhancer/docs/programming/android/release-note/
+android-cameraenhancer: /camera-enhancer/docs/programming/android/primary-api/cameraenhancer/
 
-# public resources.
-# assets: <docHomePage path>/assets/
-# edit_icon: <docHomePage path>/assets/img-icon/edit-icon.png
-# smile_icon: <docHomePage path>/assets/img-icon/icon-smile.png
-# sad_icon: <docHomePage path>/assets/img-icon/icon-sad.png
-# dbr_icon: <docHomePage path>/assets/img-icon/icon-dbr.svg
-# dwt_icon: <docHomePage path>/assets/img-icon/icon-dwt.svg
-# dnt_icon: <docHomePage path>/assets/img-icon/icon-dnt.svg
-assets: /assets/
-edit_icon: /assets/img-icon/edit-icon.png
-smile_icon: /assets/img-icon/icon-smile.png
-sad_icon: /assets/img-icon/icon-sad.png
-dbr_icon: /assets/img-icon/icon-dbr.svg
-dwt_icon: /assets/img-icon/icon-dwt.svg
-dnt_icon: /assets/img-icon/icon-dnt.svg
+reference: /camera-enhancer/docs/parameters/reference/
+enumerations: /camera-enhancer/docs/parameters/enumerations/
 
-# Replace the <docHomePage> with the value of docHomePage defined above.
-baseurl: ""
+trouble-shooting: /camera-enhancer/docs/trouble-shooting/
+license-error: /camera-enhancer/docs/trouble-shooting/license-error/
+contact-us: /camera-enhancer/docs/trouble-shooting/contact-us/
+gallery: /camera-enhancer/docs/resources/code-gallery/
+all-release-note: /camera-enhancer/docs/resources/release-notes/
+resource: /camera-enhancer/docs/resources/
+
+barcode-deploy-ios: /barcode-reader/programming/ios/api-reference/camera-enhancer/
+barcode-deploy-android: /barcode-reader/programming/android/api-reference/camera-enhancer/
+
+assets: /camera-enhancer/docs/assets/
+edit_icon: /camera-enhancer/docs/assets/img-icon/edit-icon.png
+smile_icon: /camera-enhancer/docs/assets/img-icon/icon-smile.png
+sad_icon: /camera-enhancer/docs/assets/img-icon/icon-sad.png
+dbr_icon: /camera-enhancer/docs/assets/img-icon/icon-dbr.svg
+dwt_icon: /camera-enhancer/docs/assets/img-icon/icon-dwt.svg
+dnt_icon: /camera-enhancer/docs/assets/img-icon/icon-dnt.svg
+
+overview: /camera-enhancer/overview/
+download: /camera-enhancer/downloads/1000021-confirmation/
+
+baseurl: "/camera-enhancer/docs/"
 plugins:
   - jemoji

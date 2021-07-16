@@ -1,0 +1,23 @@
+<li><a href="{{ site.ios }}" class="otherLinkColour">Objective-C & Swift (iOS)</a>
+    <ul>
+        {%- if page.url contains '/ios/' or page.url contains '/ios-v' -%}
+        <li><a href="{{ site.ios-guide }}guide.html" class="otherLinkColour">User Guide</a></li>
+        <li><a href="{{ site.ios-api }}initialization.html" class="otherLinkColour">Primary APIs</a>
+            <ul>
+                <li><a href="{{ site.ios-api }}initialization.html" class="otherLinkColour">Initialization</a></li>                                
+                <li><a href="{{ site.ios-api }}preprocess.html" class="otherLinkColour">Frame Processing Methods</a></li>
+                <li><a href="{{ site.ios-api }}camera.html" class="otherLinkColour">Regular Camera Methods</a></li>
+                <li><a href="{{ site.ios-api }}zoom-focus.html" class="otherLinkColour">Focus & Zoom Methods</a></li>
+            </ul>
+        </li>
+        <li><a href="{{ site.ios-api-auxiliary }}" class="otherLinkColour">Auxiliary APIs</a>
+            <ul>
+                <li><a href="{{ site.ios-api-auxiliary }}ltsconnection.html" class="otherLinkColour">iDMLTSConnectionParameters</a></li>
+                <li><a href="{{ site.ios-api-auxiliary }}framepackage.html" class="otherLinkColour">FramePackage</a></li>
+                <li><a href="{{ site.ios-api-auxiliary }}captureview.html" class="otherLinkColour">DCECaptureView</a></li>
+            </ul>
+        </li>
+        <li><a href="{{ site.ios-release-note }}release-note.html" class="otherLinkColour">Release Notes</a></li>
+        {%- endif -%}
+    </ul>
+</li>
