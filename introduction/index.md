@@ -4,7 +4,6 @@ title: Dynamsoft Camera Enhancer - Introduction
 description: This is the documentation - introduction page of Dynamsoft Camera Enhancer.
 keywords:  Camera Enhancer, introduction
 needAutoGenerateSidebar: true
-needGenerateH3Content: true
 noTitleIndex: true
 breadcrumbText: Introduction
 ---
