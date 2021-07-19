@@ -54,7 +54,7 @@ function FullTreeMenuList(generateDocHead, needh3 = true, pageStartVer = undefin
             var allHerf1 = $(".docContainer .content, #docHead, #AutoGenerateSidebar, .sideBar").find("a");
             for (var i = 0; i < allHerf1.length; i++)
             {
-                allHerf1[i].onclick = function(){addParam(this, curPageVersion); return false;};
+                allHerf1[i].onclick = function(){addParam(this, verArray[0]); return false;};
             }
 
             var navWrap = document.getElementById("fullTreeMenuListContainer");
