@@ -33,24 +33,33 @@ function GenerateContentByHead(needh3 = true) {
     }
 }
 
-function FullTreeMenuList(generateDocHead, needh3 = true, pageStartVer = undefined) {
-    console.log('enter full tree menu list function...')
-    var version_tree_list = null
+function FullTreeMenuList(generateDocHead, needh3 = true, pageStartVer = undefined, useVersionTree = false) {
     var verArray = SearchVersion();
-    var curPageVersion = verArray[0];
-    curPageVersion = curPageVersion == 'latest' || curPageVersion == null ? 'latest_version' : curPageVersion
-    console.log(version_tree_list, curPageVersion)
     var versionListInterval = setInterval(function() {
-        version_tree_list = $('#sideBarIframe').contents().find('#version_tree_list span')
-        console.log(version_tree_list, curPageVersion)
-        if (version_tree_list && version_tree_list.length > 0  && curPageVersion) {
-            for(var i = 0; i<version_tree_list.length; i++) {
-                console.log($(version_tree_list[i]).attr('id'), 'version_tree_' + curPageVersion)
-                if ($(version_tree_list[i]).attr('id') == 'version_tree_' + curPageVersion) {
-                    $('#fullTreeMenuListContainer').html($(version_tree_list[i]).html())
+        var stopInterval = false;
+        if (!useVersionTree) {
+            stopInterval = true;
+        }
+        else {
+            console.log('enter full tree menu list function...')
+            var version_tree_list = null
+            var curPageVersion = verArray[0];
+            curPageVersion = curPageVersion == 'latest' || curPageVersion == null ? 'latest_version' : curPageVersion;
+            console.log(version_tree_list, curPageVersion);
+            version_tree_list = $('#sideBarIframe').contents().find('#version_tree_list span');
+            console.log(version_tree_list, curPageVersion);
+            if (version_tree_list && version_tree_list.length > 0  && curPageVersion) {
+                for(var i = 0; i<version_tree_list.length; i++) {
+                    console.log($(version_tree_list[i]).attr('id'), 'version_tree_' + curPageVersion);
+                    if ($(version_tree_list[i]).attr('id') == 'version_tree_' + curPageVersion) {
+                        $('#fullTreeMenuListContainer').html($(version_tree_list[i]).html());
+                    }
                 }
+                stopInterval = true;
             }
-            
+        }
+        
+        if (stopInterval) {
             var allHerf1 = $(".docContainer .content, #docHead, #AutoGenerateSidebar, .sideBar").find("a");
             for (var i = 0; i < allHerf1.length; i++)
             {
