@@ -52,6 +52,8 @@ dnt_icon: /assets/img-icon/icon-dnt.svg
 overview: /camera-enhancer/overview/
 download: /camera-enhancer/downloads/1000021-confirmation/
 
+useVersionTree: true
+
 baseurl: "/"
 plugins:
   - jemoji

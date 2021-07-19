@@ -81,16 +81,16 @@
     {%- if page.needAutoGenerateSidebar -%}
     {%- unless page.needGenerateH3Content -%}
     <script type="text/javascript">
-        FullTreeMenuList(true, false, '{{ page.pageStartVer }}', true);
+        FullTreeMenuList(true, false, '{{ page.pageStartVer }}', '{{ site.useVersionTree }}');
     </script>
     {%- else -%}
     <script type="text/javascript">
-        FullTreeMenuList(true, true, '{{ page.pageStartVer }}', true);
+        FullTreeMenuList(true, true, '{{ page.pageStartVer }}', '{{ site.useVersionTree }}');
     </script>
     {%- endunless -%}
     {%- else -%}
     <script type="text/javascript">
-        FullTreeMenuList(false, true, '{{ page.pageStartVer }}', true);
+        FullTreeMenuList(false, true, '{{ page.pageStartVer }}', '{{ site.useVersionTree }}');
     </script>
     {%- endif -%}
 
