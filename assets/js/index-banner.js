@@ -36,7 +36,8 @@ function GenerateContentByHead(needh3 = true) {
 function FullTreeMenuList(generateDocHead, needh3 = true, pageStartVer = undefined) {
     console.log('enter full tree menu list function...')
     var version_tree_list = null
-    var curPageVersion = getUrlVars(document.URL)["ver"];
+    var verArray = SearchVersion();
+    var curPageVersion = verArray[0];
     curPageVersion = curPageVersion == 'latest' || curPageVersion == null ? 'latest_version' : curPageVersion
     console.log(version_tree_list, curPageVersion)
     var versionListInterval = setInterval(function() {
@@ -50,11 +51,15 @@ function FullTreeMenuList(generateDocHead, needh3 = true, pageStartVer = undefin
                 }
             }
             
-            var curPageRealVer = SearchVersion();
+            var allHerf1 = $(".docContainer .content, #docHead, #AutoGenerateSidebar, .sideBar").find("a");
+            for (var i = 0; i < allHerf1.length; i++)
+            {
+                allHerf1[i].onclick = function(){addParam(this, curPageVersion); return false;};
+            }
 
             var navWrap = document.getElementById("fullTreeMenuListContainer");
             if (navWrap != null) {
-                HighlightCurrentListForFullTree("fullTreeMenuListContainer", true, document.URL, pageStartVer, curPageRealVer);
+                HighlightCurrentListForFullTree("fullTreeMenuListContainer", true, document.URL, pageStartVer, verArray[1]);
                 if (generateDocHead) {
                     GenerateContentByHead(needh3);
                     //GenerateContentByHead(false);
@@ -162,13 +167,8 @@ function SearchVersion() {
         compatiableDiv.style.display = "none";
     }
 
-    var allHerf1 = $(".docContainer .content, #docHead, #AutoGenerateSidebar, .sideBar").find("a");
-    for (var i = 0; i < allHerf1.length; i++)
-    {
-        allHerf1[i].onclick = function(){addParam(this, ver); return false;};
-    }
-
-    return curVerFromUrl;
+    var verArray = new Array(ver, curVerFromUrl);
+    return verArray;
 }
 
 function HighlightCurrentListForFullTree(searchListId, firstTime, searchUrl = document.URL, pageStartVer = undefined, curPageRealVer = undefined) {
