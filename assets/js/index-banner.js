@@ -110,7 +110,7 @@ function FullTreeMenuList(generateDocHead, needh3 = true, pageStartVer = undefin
             console.log('enter full tree menu list function...')
             var completeTag = $('#complete_loading_tree');
             
-            if (completeTag) {
+            if (completeTag && completeTag.length > 0) {
                 clearInterval(versionListInterval);
 
                 var version_tree_list = null
