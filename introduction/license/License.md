@@ -6,7 +6,6 @@ keywords:  Camera Enhancer, License initialization
 needAutoGenerateSidebar: true
 breadcrumbText: License Initialization
 ---
-
 # License initialization
 
 ## Get a trial key

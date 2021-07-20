@@ -17,7 +17,7 @@
                         <input id="txtSearch" class="search" type="text">
                     </div>
                     <ul class="mainPage" id="fullTreeMenuListContainer" name="listLevel1">
-                        <!-- {%- include liquid_searchVersionTreeFile.html ver="latest version" curPath=include.curPath targetRelativePath="sidelist-fullTree.html" -%} -->
+                        
                     </ul>
                 </div>
             </div>
@@ -60,7 +60,7 @@
         <div class="container">
             <div class="col-xs-12">
                 {%- include liquid_autoGenerateHistoryList.html -%}
-                {%- include version-list.html -%}
+                {%- include auto-version-list.html -%}
             </div>
         </div>
     </div>
@@ -68,8 +68,7 @@
         {%- include page_footer.html -%}
     </div>
 
-    <iframe id="sideBarIframe" src="/Hide_Tree_Page.html" allow="" height="0" frameborder="0"></iframe>
-
+    <iframe id="sideBarIframe" src="{{ site.firstLevelUrl }}/Hide_Tree_Page.html" allow="" height="0" frameborder="0"></iframe>
 
     <script type="text/javascript">anchors.add();</script>
 
