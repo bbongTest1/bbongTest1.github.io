@@ -4,12 +4,19 @@ title: Dynamsoft Camera Enhancer - Android Release Note
 description: This is the documentation - Android Release Note page of Dynamsoft Camera Enhancer.
 keywords:  Camera Enhancer, Android Release Note
 needAutoGenerateSidebar: true
-needGenerateH3Content: false
 noTitleIndex: true
 breadcrumbText: Android Release Note
 ---
 
-# Release Note for Android - 1.x
+# Release Note for Android
+
+## 1.0.3 (07/20/2021)
+
+### New
+
+- Add Interface `CameraDLSLicenseVerificationListener` and callback `DLSLicenseVerificationCallback` to replace `CameraLTSLicenseVerificationListener` and `LTSLicenseVerificationCallback`.
+- Added class `DMDLSConnectionParameters` to replace class `DMLTSConnectionParameters`.
+- Added method `initLicenseFromDLS` in `CameraEnhancer` class to replace `initLicenseFromLTS`.
 
 ## 1.0.1 (06/10/2021)
 

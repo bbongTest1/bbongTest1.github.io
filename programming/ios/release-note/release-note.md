@@ -4,12 +4,19 @@ title: Dynamsoft Camera Enhancer - iOS Release Note
 description: This is the documentation - iOS Release Note page of Dynamsoft Camera Enhancer.
 keywords:  Camera Enhancer, iOS Release Note
 needAutoGenerateSidebar: true
-needGenerateH3Content: false
 noTitleIndex: true
 breadcrumbText: iOS Release Note
 ---
 
-# Release Note for iOS - 1.x
+# Release Note for iOS
+
+## 1.0.3 (07/20/2021)
+
+### New
+
+- Add Interface `CameraDLSLicenseVerificationListener` and callback `DLSLicenseVerificationCallback` to replace `CameraLTSLicenseVerificationListener` and `LTSLicenseVerificationCallback`.
+- Added class `DCEDLSConnectionParameters` to replace class `DCELTSConnectionParameters`.
+- Added method `initLicenseFromDLS` in `CameraEnhancer` class to replace `initLicenseFromLTS`.
 
 ## 1.0.1 (06/10/2021)
 

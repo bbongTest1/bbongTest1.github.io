@@ -12,7 +12,7 @@ breadcrumbText: iOS API
 
 ## Class
 
-- [`iDCEDLSConnectionParameters`]({{ site.ios-api-auxiliary }}dls-connection.html)
+- [`iDCELTSConnectionParameters`]({{ site.ios-api-auxiliary }}ltsconnection.html)
 - [`FramePackage`]({{ site.ios-api-auxiliary }}framepackage.html)
 - [`DCECaptureView`]({{ site.ios-api-auxiliary }}captureview.html)
 

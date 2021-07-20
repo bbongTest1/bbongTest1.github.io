@@ -17,9 +17,9 @@ breadcrumbText: License Initialization
 
 - [Please contact us to purchase for full key license]({{site.contact-us}})
 
-## Set up the license from License Tracking Server
+## Set up the license from Dynamsoft License Server
 
-Once you have a license you can use following code to set up your license from `LTS`:
+Once you have a license you can use following code to set up your license from `Dynamsoft License Server`:
 
 For Android users:
 
@@ -28,11 +28,11 @@ Android sample
 Java:
 
 ```java
-    DMLTSConnectionParameters info = new DMLTSConnectionParameters();
+    DMDLSConnectionParameters info = new DMDLSConnectionParameters();
     info.organizationID = "Your organizationID";
-    mCamera.initLicenseFromLTS(info, new CameraLTSLicenseVerificationListener() {
+    mCamera.initLicenseFromDLS(info, new CameraDLSLicenseVerificationListener() {
         @Override
-        public void LTSLicenseVerificationCallback(boolean b, Exception e) {
+        public void DLSLicenseVerificationCallback(boolean b, Exception e) {
             if(!b && e != null){
                 e.printStackTrace();
             }
@@ -43,9 +43,9 @@ Java:
 Kotlin:
 
 ```kotlin
-    val info = com.dynamsoft.dce.DMLTSConnectionParameters()
+    val info = com.dynamsoft.dce.DMDLSConnectionParameters()
     info.organizationID = "Put your organizationID here."
-    mCameraEnhancer!!.initLicenseFromLTS(info) { isSuccess, error ->
+    mCameraEnhancer!!.initLicenseFromDLS(info) { isSuccess, error ->
         if (!isSuccess) {
             error.printStackTrace()
         }
@@ -57,15 +57,15 @@ For iOS users:
 Objective-C sample
 
 ```objectivec
-    iDCELTSConnectionParameters* dcePara = [[iDCELTSConnectionParameters alloc] init];
+    iDCEDLSConnectionParameters* dcePara = [[iDCEDLSConnectionParameters alloc] init];
     dcePara.organizationID = @"Your organizationID";
-    dce = [[DynamsoftCameraEnhancer alloc] initLicenseFromLTS:dcePara view:dceview verificationDelegate:self];
+    dce = [[DynamsoftCameraEnhancer alloc] initLicenseFromDLS:dcePara view:dceview verificationDelegate:self];
 ```
 
 Swift sample
 
 ```swift
-    let lts = iDCELTSConnectionParameters()
-    lts.organizationID = "Your organizationID"
-    dce = DynamsoftCameraEnhancer.init(licenseFromLTS: lts, view: dceView, verificationDelegate: self)
+    let DLS = iDCEDLSConnectionParameters()
+    DLS.organizationID = "Your organizationID"
+    dce = DynamsoftCameraEnhancer.init(licenseFromDLS: DLS, view: dceView, verificationDelegate: self)
 ```

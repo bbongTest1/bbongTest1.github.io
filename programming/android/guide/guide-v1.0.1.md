@@ -74,11 +74,11 @@ This section is a guide on using Dynamsoft Camera Enhancer to create a simple ca
             mCameraEnhancer = new CameraEnhancer(MainActivity.this);
             mCameraEnhancer.addCameraView(cameraView);
             //Initialize your license
-            com.dynamsoft.dce.DMDLSConnectionParameters info = new com.dynamsoft.dce.DMDLSConnectionParameters();
+            com.dynamsoft.dce.DMLTSConnectionParameters info = new com.dynamsoft.dce.DMLTSConnectionParameters();
             info.organizationID = "Put your organizationID here.";
-            mCameraEnhancer.initLicenseFromDLS(info,new CameraDLSLicenseVerificationListener() {
+            mCameraEnhancer.initLicenseFromLTS(info,new CameraLTSLicenseVerificationListener() {
                 @Override
-                public void DLSLicenseVerificationCallback(boolean isSuccess, Exception error) {
+                public void LTSLicenseVerificationCallback(boolean isSuccess, Exception error) {
                     if(!isSuccess){
                         error.printStackTrace();
                     }
@@ -108,10 +108,10 @@ This section is a guide on using Dynamsoft Camera Enhancer to create a simple ca
             cameraView = findViewById(R.id.cameraView)
             mCameraEnhancer = CameraEnhancer(this@MainActivity)
             mCameraEnhancer!!.addCameraView(cameraView)
-            //Initialize DCE from Dynamsoft License Server
-            val info = com.dynamsoft.dce.DMDLSConnectionParameters()
+            //Initialize DCE from License Tracking Server
+            val info = com.dynamsoft.dce.DMLTSConnectionParameters()
             info.organizationID = "Put your organizationID here."
-            mCameraEnhancer!!.initLicenseFromDLS(info) { isSuccess, error ->
+            mCameraEnhancer!!.initLicenseFromLTS(info) { isSuccess, error ->
                 if (!isSuccess) {
                     error.printStackTrace()
                 }
@@ -144,11 +144,11 @@ public class MainActivity extends AppCompatActivity {
         cameraView = findViewById(R.id.cameraView);
         mCameraEnhancer = new CameraEnhancer(MainActivity.this);
         mCameraEnhancer.addCameraView(cameraView);
-        com.dynamsoft.dce.DMDLSConnectionParameters info = new com.dynamsoft.dce.DMDLSConnectionParameters();
+        com.dynamsoft.dce.DMLTSConnectionParameters info = new com.dynamsoft.dce.DMLTSConnectionParameters();
         info.organizationID = "Put your organizationID here.";
-        mCameraEnhancer.initLicenseFromDLS(info,new CameraDLSLicenseVerificationListener() {
+        mCameraEnhancer.initLicenseFromLTS(info,new CameraLTSLicenseVerificationListener() {
             @Override
-            public void DLSLicenseVerificationCallback(boolean isSuccess, Exception error) {
+            public void LTSLicenseVerificationCallback(boolean isSuccess, Exception error) {
                 if(!isSuccess){
                     error.printStackTrace();
                 }
@@ -195,10 +195,10 @@ class MainActivity : AppCompatActivity() {
         cameraView = findViewById(R.id.cameraView)
         mCameraEnhancer = CameraEnhancer(this@MainActivity)
         mCameraEnhancer!!.addCameraView(cameraView)
-        //Initialize DCE from Dynamsoft License Server
-        val info = com.dynamsoft.dce.DMDLSConnectionParameters()
+        //Initialize DCE from License Tracking Server
+        val info = com.dynamsoft.dce.DMLTSConnectionParameters()
         info.organizationID = "Put your organizationID here."
-        mCameraEnhancer!!.initLicenseFromDLS(info) { isSuccess, error ->
+        mCameraEnhancer!!.initLicenseFromLTS(info) { isSuccess, error ->
             if (!isSuccess) {
                 error.printStackTrace()
             }
@@ -270,12 +270,12 @@ This section is the guide for users to add a video stream decoder in the camera 
     ```java
     import com.dynamsoft.dbr.BarcodeReader;
     import com.dynamsoft.dbr.BarcodeReaderException;
-    import com.dynamsoft.dbr.DBRDLSLicenseVerificationListener;
+    import com.dynamsoft.dbr.DBRLTSLicenseVerificationListener;
     import com.dynamsoft.dbr.DCESettingParameters;
     import com.dynamsoft.dbr.TextResultCallback;
     import com.dynamsoft.dbr.TextResult;
     import com.dynamsoft.dce.CameraEnhancer;
-    import com.dynamsoft.dce.CameraDLSLicenseVerificationListener;
+    import com.dynamsoft.dce.CameraLTSLicenseVerificationListener;
     import com.dynamsoft.dce.CameraView;
 
     public class MainActivity extends AppCompatActivity {
@@ -297,12 +297,12 @@ This section is the guide for users to add a video stream decoder in the camera 
             //****************************
             mCameraEnhancer = new CameraEnhancer(MainActivity.this);
             mCameraEnhancer.addCameraView(cameraView);
-            //Initialize DCE from Dynamsoft License Server
-            com.dynamsoft.dce.DMDLSConnectionParameters info = new com.dynamsoft.dce.DMDLSConnectionParameters();
+            //Initialize DCE from License Tracking Server
+            com.dynamsoft.dce.DMLTSConnectionParameters info = new com.dynamsoft.dce.DMLTSConnectionParameters();
             info.organizationID = "Put your organizationID here.";
-            mCameraEnhancer.initLicenseFromDLS(info,new CameraDLSLicenseVerificationListener() {
+            mCameraEnhancer.initLicenseFromLTS(info,new CameraLTSLicenseVerificationListener() {
                 @Override
-                public void DLSLicenseVerificationCallback(boolean isSuccess, Exception error) {
+                public void LTSLicenseVerificationCallback(boolean isSuccess, Exception error) {
                     if(!isSuccess){ error.printStackTrace(); }
                 }
             });
@@ -329,14 +329,14 @@ This section is the guide for users to add a video stream decoder in the camera 
             mCameraEnhancer.enableFastMode(true);
 
             //******************The following parts are newly added******************************
-            //Initialize Dynamsoft Barcode Reader from Dynamsoft License Server
+            //Initialize Dynamsoft Barcode Reader from License Tracking Server
             try {
                 reader = new BarcodeReader();
-                com.dynamsoft.dbr.DMDLSConnectionParameters parameters = new com.dynamsoft.dbr.DMDLSConnectionParameters();
+                com.dynamsoft.dbr.DMLTSConnectionParameters parameters = new com.dynamsoft.dbr.DMLTSConnectionParameters();
                 parameters.organizationID = "Put your organizationID here.";
-                reader.initLicenseFromDLS(parameters, new DBRDLSLicenseVerificationListener() {
+                reader.initLicenseFromLTS(parameters, new DBRLTSLicenseVerificationListener() {
                     @Override
-                    public void DLSLicenseVerificationCallback(boolean b, Exception e) {
+                    public void LTSLicenseVerificationCallback(boolean b, Exception e) {
                         if (!b) { e.printStackTrace(); }
                     }
                 });
@@ -387,11 +387,11 @@ This section is the guide for users to add a video stream decoder in the camera 
     import com.dynamsoft.dbr.TextResultCallback
     import com.dynamsoft.dbr.BarcodeReader
     import com.dynamsoft.dcesimplesample.R
-    import com.dynamsoft.dbr.DBRDLSLicenseVerificationListener
+    import com.dynamsoft.dbr.DBRLTSLicenseVerificationListener
     import com.dynamsoft.dbr.BarcodeReaderException
     import com.dynamsoft.dbr.TextResult
     import com.dynamsoft.dbr.DCESettingParameters
-    import com.dynamsoft.dbr.DMDLSConnectionParameters
+    import com.dynamsoft.dbr.DMLTSConnectionParameters
 
     class MainActivity : AppCompatActivity() {
         var cameraView: CameraView? = null
@@ -413,10 +413,10 @@ This section is the guide for users to add a video stream decoder in the camera 
             //****************************
             mCameraEnhancer = CameraEnhancer(this@MainActivity)
             mCameraEnhancer!!.addCameraView(cameraView)
-            //Initialize DCE from Dynamsoft License Server
-            val info = com.dynamsoft.dce.DMDLSConnectionParameters()
+            //Initialize DCE from License Tracking Server
+            val info = com.dynamsoft.dce.DMLTSConnectionParameters()
             info.organizationID = "Put your organizationID here."
-            mCameraEnhancer!!.initLicenseFromDLS(info) { isSuccess, error ->
+            mCameraEnhancer!!.initLicenseFromLTS(info) { isSuccess, error ->
                 if (!isSuccess) {
                     error.printStackTrace()
                 }
@@ -444,12 +444,12 @@ This section is the guide for users to add a video stream decoder in the camera 
             mCameraEnhancer!!.enableFastMode(true)
 
             //******************The following parts are newly added******************************
-            //Initialize Dynamsoft Barcode Reader from Dynamsoft License Server
+            //Initialize Dynamsoft Barcode Reader from License Tracking Server
             try {
                 reader = BarcodeReader()
-                val parameters = DMDLSConnectionParameters()
+                val parameters = DMLTSConnectionParameters()
                 parameters.organizationID = "Put your organizationID here."
-                reader!!.initLicenseFromDLS(parameters) { b, e ->
+                reader!!.initLicenseFromLTS(parameters) { b, e ->
                     if (!b) {
                         e.printStackTrace()
                     }

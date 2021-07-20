@@ -31,12 +31,12 @@ breadcrumbText: Enumerations Error code
 | `DM_NO_LICENSE` | `EnumCameraErrorCode_NO_LICENSE` | -20000 | There is no license specified. |
 | `DM_HANDSHAKE_CODE_INVALID` | `EnumCameraErrorCode_HANDSHAKE_CODE_INVALID` | -20001 | Handshake code is invalid. |
 | `DM_LICENSE_BUFFER_FAILED` | `EnumCameraErrorCode_LICENSE_BUFFER_FAILED` | -20002 | Failed to read or write license buffer. |
-| `DM_LICENSE_SYNC_FAILED` | `EnumCameraErrorCode_LICENSE_SYNC_FAILED` | -20003 | Failed to synchronize license info with Dynamsoft License Server. |
+| `DM_LICENSE_SYNC_FAILED` | `EnumCameraErrorCode_LICENSE_SYNC_FAILED` | -20003 | Failed to synchronize license info with license tracking server. |
 | `DM_DEVICE_NOT_MATCH` | `EnumCameraErrorCode_DEVICE_NOT_MATCH` | -20004 | Device does not match with license buffer. |
 | `DM_BIND_DEVICE_FAILED` | `EnumCameraErrorCode_BIND_DEVICE_FAILED` | -20005 | Failed to bind device. |
-| `DM_LICENSE_INTERFACE_CONFLICT` | `EnumCameraErrorCode_LICENSE_INTERFACE_CONFLICT` | -20006 | Interface InitLicenseFromDLS can not be used together with other license initiation interfaces. |
+| `DM_LICENSE_INTERFACE_CONFLICT` | `EnumCameraErrorCode_LICENSE_INTERFACE_CONFLICT` | -20006 | Interface InitLicenseFromLTS can not be used together with other license initiation interfaces. |
 | `DM_LICENSE_CLIENT_DLL_MISSING` | `EnumCameraErrorCode_LICENSE_CLIENT_DLL_MISSING` | -20007 | The license client dll is missing. |
 | `DM_INSTANCE_COUNT_OVER_LIMITED` | `EnumCameraErrorCode_INSTANCE_COUNT_OVER_LIMITED` | -20008 | The number of instances used has exceeded the limit. |
-| `DM_LICENSE_INIT_SEQUENCE_FAILED` | `EnumCameraErrorCode_LICENSE_INIT_SEQUENCE_FAILED` | -20009 | Interface InitLicenseFromDLS has to be called before creating any SDK objects. |
+| `DM_LICENSE_INIT_SEQUENCE_FAILED` | `EnumCameraErrorCode_LICENSE_INIT_SEQUENCE_FAILED` | -20009 | Interface InitLicenseFromLTS has to be called before creating any SDK objects. |
 | `DM_TRIAL_LICENSE` | `EnumCameraErrorCode_TRIAL_LICENSE` | -20010 | Using a trial license. |
-| `DM_FAILED_TO_REACH_DLS` | `EnumCameraErrorCode_FAILED_TO_REACH_DLS` | -20200 | Fail to connect to Dynamsoft License Server. |
+| `DM_FAILED_TO_REACH_LTS` | `EnumCameraErrorCode_FAILED_TO_REACH_LTS` | -20200 | Fail to connect to license tracking server. |

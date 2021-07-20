@@ -12,7 +12,7 @@ breadcrumbText: Android Auxiliary API
 
 ## Class
 
-- [`DMDLSConnectionParameters`]({{site.android-api-auxiliary}}dls-connection.html)
+- [`DMLTSConnectionParameters`]({{site.android-api-auxiliary}}lts-connection.html)
 - [`Frame`]({{site.android-api-auxiliary}}frame.html)
 - [`HardwareUtil`]({{site.android-api-auxiliary}}hardwareutil.html)
 - [`CameraView`]({{site.android-api-auxiliary}}cameraview.html)
@@ -28,5 +28,5 @@ breadcrumbText: Android Auxiliary API
 ## Interface
 
 - [`CameraListener`]({{ site.android-api-auxiliary }}interface.html#cameralistener)
-- [`CameraDLSLicenseVerificationListener`]({{ site.android-api-auxiliary }}interface.html#cameradlslicenseverificationlistener)
+- [`CameraLTSLicenseVerificationListener`]({{ site.android-api-auxiliary }}interface.html#cameraltslicenseverificationlistener)
 - [`TorchListener`]({{ site.android-api-auxiliary }}interface.html#torchlistener)
