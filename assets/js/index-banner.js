@@ -108,7 +108,7 @@ function FullTreeMenuList(generateDocHead, needh3 = true, pageStartVer = undefin
     else {
         var versionListInterval = setInterval(function() {
             console.log('enter full tree menu list function...')
-            var completeTag = $('#sideBarIframe').contents().find('#complete_loading_tree');
+            var completeTag = $('#sideBarIframe').contents().getElementById("complete_loading_tree");
             
             if (completeTag && completeTag.length > 0) {
                 clearInterval(versionListInterval);
