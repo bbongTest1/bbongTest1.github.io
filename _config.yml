@@ -61,6 +61,15 @@ plugins:
 
 defaults:
   - scope:
+      path: "index.html"
+    values:
+      oriPath: programming/android/auxiliary-api
+      additionalSearchPath:
+        - programming/android/auxiliary-api-backup
+        - programming/android/auxiliary-api-backup-test
+
+defaults:
+  - scope:
       path: "programming/android/auxiliary-api"
     values:
       oriPath: programming/android/auxiliary-api

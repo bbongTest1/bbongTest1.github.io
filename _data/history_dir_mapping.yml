@@ -1,0 +1,12 @@
+- start_path: programming/android/auxiliary-api
+  additional_mapping_path:
+    - programming/android/auxiliary-api-backup
+    - programming/android/auxiliary-api-backup-test
+  
+- start_path: programming/android/auxiliary-api-backup
+  additional_mapping_path:
+    - programming/android/auxiliary-api
+
+- start_path: programming/android/auxiliary-api-backup-test
+  additional_mapping_path:
+    - programming/android/auxiliary-api
