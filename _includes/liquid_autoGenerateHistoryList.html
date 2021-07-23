@@ -30,7 +30,7 @@
 {%- assign hasAddtionalMappingDir = false -%}
 {%- assign additionalMappingList = nil -%}
 {%- assign startPath = nil -%}
-{%- for mappingMember in site.data.history_dir_mapping -%}
+{%- for mappingMember in site.data.history_mapping_list -%}
     {%- if curUsedToMatchUrl contains mappingMember.start_path -%}
     	{%- assign hasAddtionalMappingDir = true -%}
 		{%- assign additionalMappingList = mappingMember.additional_mapping_path -%}
