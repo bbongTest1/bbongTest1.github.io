@@ -32,8 +32,6 @@
 {%- assign startPath = nil -%}
 {%- for mappingMember in site.data.history_dir_mapping -%}
     {%- if curUsedToMatchUrl contains mappingMember.start_path -%}
-		{{- curUsedToMatchUrl -}}
-		{{- mappingMember.start_path -%}}
     	{%- assign hasAddtionalMappingDir = true -%}
 		{%- assign additionalMappingList = mappingMember.additional_mapping_path -%}
 		{%- assign startPath = mappingMember.start_path -%}
