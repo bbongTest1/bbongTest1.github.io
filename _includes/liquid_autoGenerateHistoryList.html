@@ -57,6 +57,11 @@
 		{%- assign tmpUsedToMatchUrl = tmpUsedToMatchUrl | remove: 'index.html' -%}
 	{%- endif -%}
 
+	{%- assign extraSearchPath = page.additionalSearchPath -%}
+	{%- for extraPath in extraSearchPath -%}
+		{%- assign tmpUsedToMatchUrl = tmpUsedToMatchUrl | replace: extraSearchPath, page.oriPath -%}
+	{%- endfor -%}
+	
 	{%- if tmpUsedToMatchUrl != curUsedToMatchUrl -%}
 		{%- continue -%}
 	{%- endif -%}
