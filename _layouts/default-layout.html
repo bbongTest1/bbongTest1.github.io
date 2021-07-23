@@ -27,13 +27,6 @@
                 </div>
                 <div class="main row">
                     <div class="content markdown-body headCounter col-xs-12 col-md-12 col-lg-9 col-xl-10" style="margin-bottom: 20px;">
-
-                        {{- page.oriPath -}}
-                        {%- assign extraSearchPath = page.additionalSearchPath -%}
-                        {%- for extraPath in extraSearchPath -%}
-                            {{- extraPath -}}
-                        {%- endfor -%}
-
                         {{ content }}
                         
                     </div>

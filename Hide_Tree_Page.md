@@ -1,10 +1,3 @@
-{%- assign dirMapping = site.data.history_dir_mapping -%}
-{%- for dir in dirMapping -%}
-    {{- dir.start_path -}}
-    {%- assign dirPath = dir.additional_mapping_path -%}
-    {{- dirPath -}}
-{%- endfor -%}
-
 {%- if site.useVersionTree -%}
     <div id="version_tree_list">
         {%- assign validVerInfo = site.data.product_version.version_info_list -%}

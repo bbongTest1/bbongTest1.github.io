@@ -59,37 +59,37 @@ plugins:
   - jemoji
 
 
-defaults:
-  - scope:
-      path: "index.html"
-    values:
-      oriPath: programming/android/auxiliary-api
-      additionalSearchPath:
-        - programming/android/auxiliary-api-backup
-        - programming/android/auxiliary-api-backup-test
+# defaults:
+#   - scope:
+#       path: "index.html"
+#     values:
+#       oriPath: programming/android/auxiliary-api
+#       additionalSearchPath:
+#         - programming/android/auxiliary-api-backup
+#         - programming/android/auxiliary-api-backup-test
 
-defaults:
-  - scope:
-      path: "programming/android/auxiliary-api"
-    values:
-      oriPath: programming/android/auxiliary-api
-      additionalSearchPath:
-        - programming/android/auxiliary-api-backup
-        - programming/android/auxiliary-api-backup-test
+# defaults:
+#   - scope:
+#       path: "programming/android/auxiliary-api"
+#     values:
+#       oriPath: programming/android/auxiliary-api
+#       additionalSearchPath:
+#         - programming/android/auxiliary-api-backup
+#         - programming/android/auxiliary-api-backup-test
 
 
-defaults:
-  - scope:
-      path: "programming/android/auxiliary-api-backup"
-    values:
-      oriPath: programming/android/auxiliary-api-backup
-      additionalSearchPath:
-        - programming/android/auxiliary-api
+# defaults:
+#   - scope:
+#       path: "programming/android/auxiliary-api-backup"
+#     values:
+#       oriPath: programming/android/auxiliary-api-backup
+#       additionalSearchPath:
+#         - programming/android/auxiliary-api
 
-defaults:
-  - scope:
-      path: "programming/android/auxiliary-api-backup-test"
-    values:
-      oriPath: programming/android/auxiliary-api-backup-test
-      additionalSearchPath:
-        - programming/android/auxiliary-api
+# defaults:
+#   - scope:
+#       path: "programming/android/auxiliary-api-backup-test"
+#     values:
+#       oriPath: programming/android/auxiliary-api-backup-test
+#       additionalSearchPath:
+#         - programming/android/auxiliary-api
