@@ -1,3 +1,11 @@
+- start_path: programming/android/auxiliary-api/dls-connection.html
+  additional_mapping_path:
+    - programming/android/auxiliary-api/lts-connection.html
+
+- start_path: programming/android/auxiliary-api/lts-connection.html
+  additional_mapping_path:
+    - programming/android/auxiliary-api/dls-connection.html
+
 - start_path: programming/android/auxiliary-api/
   additional_mapping_path:
     - programming/android/auxiliary-api-backup/
@@ -11,11 +19,3 @@
   additional_mapping_path:
     - programming/android/auxiliary-api/
 
-
-- start_path: programming/android/auxiliary-api/dls-connection.html
-  additional_mapping_path:
-    - programming/android/auxiliary-api/lts-connection.html
-
-- start_path: programming/android/auxiliary-api/lts-connection.html
-  additional_mapping_path:
-    - programming/android/auxiliary-api/dls-connection.html
