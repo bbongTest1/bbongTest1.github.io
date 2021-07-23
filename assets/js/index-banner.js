@@ -421,9 +421,9 @@ function UrlSearch(docUrl, listUrl) {
     listUrl = listUrl.toLowerCase();
 
     docUrl = docUrl.replace(/\/index.html/g,"/");
-    listUrl = searchUrl.replace(/\/index-v[0-9]+[^\/]*.html/g,"/");
-    listUrl = searchUrl.replace(/-v[0-9]+[^\/]*\//g,"/");
-    listUrl = searchUrl.replace(/-v[0-9]+[^\/]*.html/g,".html");
+    listUrl = listUrl.replace(/\/index-v[0-9]+[^\/]*.html/g,"/");
+    listUrl = listUrl.replace(/-v[0-9]+[^\/]*\//g,"/");
+    listUrl = listUrl.replace(/-v[0-9]+[^\/]*.html/g,".html");
     listUrl = listUrl.replace(/\/index.html/g,"/");
 
     var docUrlWithParam = getUrlVars(docUrl)["src"];
