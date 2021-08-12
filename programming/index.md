@@ -8,6 +8,8 @@ breadcrumbText: Start Programming
 ---
 # Get started on Programming
 
+<!-- Test Comment -->
+
 Dynamsoft Camera Enhancer is now available for the following programming languages:
 
 - [Java (Android)]({{site.android}})
