@@ -1,4 +1,3 @@
-## Test Release Notes
 
 This is release note content.
 
