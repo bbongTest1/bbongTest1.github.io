@@ -37,4 +37,4 @@ breadcrumbText: Documentation
 
 ## Release Notes
 
-{%- include release-notes/release-notes-test.html -%}
+{%- include release-notes/release-notes-test.md -%}
