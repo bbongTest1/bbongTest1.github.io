@@ -33,3 +33,8 @@ breadcrumbText: Documentation
 ## Trouble shooting
 
 - [Contact us]({{site.contact-us}})
+
+
+## Release Notes
+
+{%- include release-notes/release-notes-test.html -%}
