@@ -34,6 +34,18 @@ function GenerateContentByHead(needh3 = true) {
 }
 
 function FullTreeMenuList(generateDocHead, needh3 = true, pageStartVer = undefined, useVersionTree = false) {
+    if (useVersionTree == 'true') {
+        useVersionTree = true;
+    }
+    else if (useVersionTree == 'false') {
+        useVersionTree = false;
+    }
+    if (generateDocHead == 'true') {
+        generateDocHead = true;
+    }
+    else if (generateDocHead == 'false') {
+        generateDocHead = false;
+    }
     var verArray = SearchVersion();
     if (!useVersionTree) {
         var allHerf1 = $(".docContainer .content, #docHead, #AutoGenerateSidebar, .sideBar").find("a");
@@ -46,15 +58,34 @@ function FullTreeMenuList(generateDocHead, needh3 = true, pageStartVer = undefin
         if (navWrap != null) {
             HighlightCurrentListForFullTree("fullTreeMenuListContainer", true, document.URL, pageStartVer, verArray[1]);
             if (generateDocHead) {
+                if (needh3 == 'true') {
+                    needh3 = true;
+                }
+                else if (needh3 == 'false') {
+                    needh3 = false;
+                }
+                if (needh3) {
+                    $('#fullTreeMenuListContainer').addClass('needh3');
+                }               
                 GenerateContentByHead(needh3);
                 //GenerateContentByHead(false);
             }
-    
             var hiddenLayout = $('.docContainer, .sideBar, .history');
             for (var i = 0; i < hiddenLayout.length; i++) {
                 hiddenLayout[i].style.visibility = "visible";
             }
+            initFoldPanel();
             init();
+
+            var treeHeight = $('#fullTreeMenuListContainer')[0].clientHeight;
+            var treeOffsetTop = $('#fullTreeMenuListContainer').offset().top;
+            var nodeOffsetTop = $('#fullTreeMenuListContainer .activeLink').offset().top;
+            var lineHeight = $('#fullTreeMenuListContainer .activeLink')[0].offsetHeight;
+            if (nodeOffsetTop > treeHeight + treeOffsetTop - lineHeight) {
+                $('#fullTreeMenuListContainer').scrollTop(nodeOffsetTop - treeOffsetTop - lineHeight);
+            }
+            
+            
 
             navWrap = document.getElementById("fullTreeMenuListContainer");
             var liAry = navWrap.getElementsByTagName("li");
@@ -136,15 +167,32 @@ function FullTreeMenuList(generateDocHead, needh3 = true, pageStartVer = undefin
                     if (navWrap != null) {
                         HighlightCurrentListForFullTree("fullTreeMenuListContainer", true, document.URL, pageStartVer, verArray[1]);
                         if (generateDocHead) {
+                            if (needh3 == 'true') {
+                                needh3 = true;
+                            }
+                            else if (needh3 == 'false') {
+                                needh3 = false;
+                            }
+                            if (needh3) {
+                                $('#fullTreeMenuListContainer').addClass('needh3');
+                            }  
                             GenerateContentByHead(needh3);
                             //GenerateContentByHead(false);
                         }
-    
                         var hiddenLayout = $('.docContainer, .sideBar, .history');
                         for (var i = 0; i < hiddenLayout.length; i++) {
                             hiddenLayout[i].style.visibility = "visible";
                         }
+                        initFoldPanel();
                         init();
+
+                        var treeHeight = $('#fullTreeMenuListContainer')[0].clientHeight;
+                        var treeOffsetTop = $('#fullTreeMenuListContainer').offset().top;
+                        var nodeOffsetTop = $('#fullTreeMenuListContainer .activeLink').offset().top;
+                        var lineHeight = $('#fullTreeMenuListContainer .activeLink')[0].offsetHeight;
+                        if (nodeOffsetTop > treeHeight + treeOffsetTop - lineHeight) {
+                            $('#fullTreeMenuListContainer').scrollTop(nodeOffsetTop - treeOffsetTop - lineHeight);
+                        }
     
                         navWrap = document.getElementById("fullTreeMenuListContainer");
                         var liAry = navWrap.getElementsByTagName("li");
@@ -421,9 +469,6 @@ function UrlSearch(docUrl, listUrl) {
     listUrl = listUrl.toLowerCase();
 
     docUrl = docUrl.replace(/\/index.html/g,"/");
-    listUrl = listUrl.replace(/\/index-v[0-9]+[^\/]*.html/g,"/");
-    listUrl = listUrl.replace(/-v[0-9]+[^\/]*\//g,"/");
-    listUrl = listUrl.replace(/-v[0-9]+[^\/]*.html/g,".html");
     listUrl = listUrl.replace(/\/index.html/g,"/");
 
     var docUrlWithParam = getUrlVars(docUrl)["src"];
