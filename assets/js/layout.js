@@ -24,6 +24,15 @@ $(document).ready(function(){
     })
 
     window.addEventListener('scroll', realFunc);
+    
+    setTimeout(function() {
+        for(var i = 0; i<objs.length; i++) {
+            var obj = $(".fold-panel-prefix").eq(i)
+            $(obj).next().find('i').css({'width': ($(obj).next().width() - 24) + 'px'})
+            $(obj).next().find('i').css({'height': $(obj).next().height() + 'px'})
+            $(obj).next().find('i').css({'line-height': $(obj).next().height() + 'px'})
+        }
+    }, 500)
 
     function realFunc() {
         $('.rightSideMenu').css({'padding-top': $('#docHead').outerHeight()+'px'});
