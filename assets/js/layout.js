@@ -32,6 +32,7 @@ $(document).ready(function(){
             $(obj).next().find('i').css({'width': ($(obj).next().width() - 24) + 'px'})
             $(obj).next().find('i').css({'height': $(obj).next().height() + 'px'})
             $(obj).next().find('i').css({'line-height': $(obj).next().height() + 'px'})
+            $(obj).next().find('i').css({'opacity': 1})
         }
     }, 500)
 
