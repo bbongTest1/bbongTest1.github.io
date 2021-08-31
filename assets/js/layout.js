@@ -26,6 +26,7 @@ $(document).ready(function(){
     window.addEventListener('scroll', realFunc);
     
     setTimeout(function() {
+        var objs = $(".fold-panel-prefix")
         for(var i = 0; i<objs.length; i++) {
             var obj = $(".fold-panel-prefix").eq(i)
             $(obj).next().find('i').css({'width': ($(obj).next().width() - 24) + 'px'})
