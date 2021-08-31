@@ -37,7 +37,10 @@ breadcrumbText: Documentation
 
 ## Release Notes   
 
+<div class="Test">
+
 {%- include release-notes/release-notes-2.0.md -%}
 
+</div>
 
 ## Test
