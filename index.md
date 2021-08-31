@@ -35,13 +35,6 @@ breadcrumbText: Documentation
 - [Contact us]({{site.contact-us}})
 
 
-
-
-
-{%- include release-notes/product-highlight-2.0.md -%}
-
-
-
 ## Release Notes   
 
 <div class="fold-panel-prefix"></div>
