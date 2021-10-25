@@ -1,3 +1,5 @@
+{{ include.curPath }}
+
 {%- assign targetPath = include.curPath | append: include.targetRelativePath | strip -%}
 {%- assign validTreeFiles = site.data.full_tree.tree_file_list -%}
 
